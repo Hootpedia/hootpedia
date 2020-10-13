@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8aefaee7-c04b-4815-90fa-1d4b9909b3f5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" />
-    </list>
+    <list default="true" id="8aefaee7-c04b-4815-90fa-1d4b9909b3f5" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -158,14 +156,21 @@
       <option name="presentableId" value="Default" />
       <updated>1602626816962</updated>
       <workItem from="1602626820352" duration="378000" />
-      <workItem from="1602627517600" duration="178000" />
+      <workItem from="1602627517600" duration="474000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="266" y="25" key="CommitChangelistDialog2" timestamp="1602628272030">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="266" y="25" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1602628272030" />
     <state width="1398" height="238" key="GridCell.Tab.0.bottom" timestamp="1602627487666">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -182,5 +187,9 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="238" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1602627487662" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1602628289644">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1602628289644" />
   </component>
 </project>
