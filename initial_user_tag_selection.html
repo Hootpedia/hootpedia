@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h2>Choose tags you are interested in:</h2>
+
+    <p>The select element defines a drop-down list:</p>
+
+    <form action="/action_page.php">
+        <label for="level">Which best describes you:</label>
+        <select id="level" name="level">
+            <option value="student">Student</option>
+            <option value="educator">Educator</option>
+            <option value="professional">Professional</option>
+            <option value="hobbyist">Hobbyist</option>
+        </select>
+        <p></p>
+        <label for="language">Which programming languages are you interested in:</label>
+        <select id="language" name="language">
+            <option value="C">C</option>
+            <option value="C++">C++</option>
+            <option value="C sharp">C sharp</option>
+            <option value="Python">Python</option>
+            <option value="HTML">HTML</option>
+            <option value="Java">Java</option>
+            <option value="Swift">Swift</option>
+            <option value="other">other</option>
+        </select>
+        <p></p>
+        <form action="/action_page.php">
+            <label for="OS">What operating system are you using:</label>
+            <select id="language" name="language">
+                <option value="Windows">Windows</option>
+                <option value="Mac">Mac</option>
+                <option value="Android">Android</option>
+                <option value="Linux">Linux</option>
+            </select>
+            <p></p>
+            <input type="submit">
+        </form>
+
+
+        <h2>What computer science fields are you interested in? Click all that apply</h2>
+
+        <form action="/action_page.php" validate>
+            <input type="submit" id="tag" name="tagDS" value="Data Science">
+        </form>
+
+        <form action="/action_page.php" validate>
+            <input type="submit" id="tag" name="tagML" value="Machine Learning">
+        </form>
+
+        <form action="/action_page.php" validate>
+            <input type="submit" id="tag" name="tagWD" value="Web Development">
+        </form>
+
+        <form action="/action_page.php" validate>
+            <input type="submit" id="tag" name="tagAlgo" value="Algorithms">
+        </form>
+
+        <form action="/action_page.php" validate>
+            <input type="submit" id="tag" name="tagCrypto" value="Cryptology">
+        </form>
+
+        <form action="/action_page.php" validate>
+            <input type="submit" id="tag" name="tagHack" value="Hacking">
+        </form>
+
+        <form action="/action_page.php" validate>
+            <input type="submit" id="tag" name="tagOS" value="OS Development">
+        </form>
+
+        <form action="/action_page.php" validate>
+            <input type="submit" id="tag" name="tagComp" value="Compiler Development">
+        </form>
+
+        <form action="/action_page.php" validate>
+            <input type="submit" id="tag" name="tagIOT" value="Internet of Things">
+        </form>
+
+        <form action="/action_page.php" validate>
+            <input type="submit" id="tag" name="tagRobo" value="Robotics">
+        </form>
+
+        <h2>Type your first post here</h2>
+
+        <form action="/action_page.php">
+            <textarea name="message" rows="10" cols="30"></textarea>
+            <br><br>
+            <input type="submit">
+        </form>
+
+</body>
+</html>
