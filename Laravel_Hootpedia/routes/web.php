@@ -21,3 +21,14 @@ Route::get('/home', function () {
     return view('home');
 });
 
+Route::get('/view/login', function () {
+    return view('auth.login');
+});
+
+Route::get('/view/register', function () {
+    return view('auth.registration.create');
+});
+
+Route::post('/register','RegisterController@store');
+Route::get('/register','RegisterController@create');
+

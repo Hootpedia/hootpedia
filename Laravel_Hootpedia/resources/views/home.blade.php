@@ -36,10 +36,10 @@
     <div class="collapse navbar-collapse flex-grow-0 ml-auto mr-1" id="collapsibleNavbar">
         <ul class="navbar-nav text-right">
             <li class="nav-item">
-                <a class="nav-link font-weight-bold text-dark" href="#">LOGIN</a>
+                <a class="nav-link font-weight-bold text-dark" href="#>LOGIN</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link font-weight-bold text-dark" href="#">SIGN UP</a>
+                <a class="nav-link font-weight-bold text-dark" href="{{url('Laravel_Hootpedia/resources/views/auth/create.blade.php')}}">SIGN UP</a>
             </li>
         </ul>
     </div>

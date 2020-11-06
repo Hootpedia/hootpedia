@@ -9,8 +9,10 @@
       <sourceFolder url="file://$MODULE_DIR$/Laravel_Hootpedia/tests" isTestSource="true" packagePrefix="Tests\" />
       <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/Laravel_Hootpedia/vendor/asm89/stack-cors" />
+      <excludeFolder url="file://$MODULE_DIR$/Laravel_Hootpedia/vendor/bacon/bacon-qr-code" />
       <excludeFolder url="file://$MODULE_DIR$/Laravel_Hootpedia/vendor/brick/math" />
       <excludeFolder url="file://$MODULE_DIR$/Laravel_Hootpedia/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/Laravel_Hootpedia/vendor/dasprid/enum" />
       <excludeFolder url="file://$MODULE_DIR$/Laravel_Hootpedia/vendor/dnoegel/php-xdg-base-dir" />
       <excludeFolder url="file://$MODULE_DIR$/Laravel_Hootpedia/vendor/doctrine/inflector" />
       <excludeFolder url="file://$MODULE_DIR$/Laravel_Hootpedia/vendor/doctrine/instantiator" />
@@ -29,6 +31,7 @@
       <excludeFolder url="file://$MODULE_DIR$/Laravel_Hootpedia/vendor/guzzlehttp/promises" />
       <excludeFolder url="file://$MODULE_DIR$/Laravel_Hootpedia/vendor/guzzlehttp/psr7" />
       <excludeFolder url="file://$MODULE_DIR$/Laravel_Hootpedia/vendor/hamcrest/hamcrest-php" />
+      <excludeFolder url="file://$MODULE_DIR$/Laravel_Hootpedia/vendor/laravel/fortify" />
       <excludeFolder url="file://$MODULE_DIR$/Laravel_Hootpedia/vendor/laravel/framework" />
       <excludeFolder url="file://$MODULE_DIR$/Laravel_Hootpedia/vendor/laravel/tinker" />
       <excludeFolder url="file://$MODULE_DIR$/Laravel_Hootpedia/vendor/league/commonmark" />
@@ -41,6 +44,7 @@
       <excludeFolder url="file://$MODULE_DIR$/Laravel_Hootpedia/vendor/nikic/php-parser" />
       <excludeFolder url="file://$MODULE_DIR$/Laravel_Hootpedia/vendor/nunomaduro/collision" />
       <excludeFolder url="file://$MODULE_DIR$/Laravel_Hootpedia/vendor/opis/closure" />
+      <excludeFolder url="file://$MODULE_DIR$/Laravel_Hootpedia/vendor/paragonie/constant_time_encoding" />
       <excludeFolder url="file://$MODULE_DIR$/Laravel_Hootpedia/vendor/phar-io/manifest" />
       <excludeFolder url="file://$MODULE_DIR$/Laravel_Hootpedia/vendor/phar-io/version" />
       <excludeFolder url="file://$MODULE_DIR$/Laravel_Hootpedia/vendor/phpdocumentor/reflection-common" />
@@ -54,6 +58,7 @@
       <excludeFolder url="file://$MODULE_DIR$/Laravel_Hootpedia/vendor/phpunit/php-text-template" />
       <excludeFolder url="file://$MODULE_DIR$/Laravel_Hootpedia/vendor/phpunit/php-timer" />
       <excludeFolder url="file://$MODULE_DIR$/Laravel_Hootpedia/vendor/phpunit/phpunit" />
+      <excludeFolder url="file://$MODULE_DIR$/Laravel_Hootpedia/vendor/pragmarx/google2fa" />
       <excludeFolder url="file://$MODULE_DIR$/Laravel_Hootpedia/vendor/psr/container" />
       <excludeFolder url="file://$MODULE_DIR$/Laravel_Hootpedia/vendor/psr/event-dispatcher" />
       <excludeFolder url="file://$MODULE_DIR$/Laravel_Hootpedia/vendor/psr/http-client" />

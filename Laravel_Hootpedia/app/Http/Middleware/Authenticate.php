@@ -11,11 +11,12 @@ class Authenticate extends Middleware
      *
      * @param  \Illuminate\Http\Request  $request
      * @return string|null
+     * @noinspection PhpInconsistentReturnPointsInspection
      */
     protected function redirectTo($request)
     {
         if (! $request->expectsJson()) {
-            return route('login');
+            return route('login.blade.php');
         }
     }
 }

@@ -107,6 +107,11 @@
       <path value="$PROJECT_DIR$/Laravel_Hootpedia/vendor/phpdocumentor/reflection-docblock" />
       <path value="$PROJECT_DIR$/Laravel_Hootpedia/vendor/phpdocumentor/reflection-common" />
       <path value="$PROJECT_DIR$/Laravel_Hootpedia/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/Laravel_Hootpedia/vendor/laravel/fortify" />
+      <path value="$PROJECT_DIR$/Laravel_Hootpedia/vendor/pragmarx/google2fa" />
+      <path value="$PROJECT_DIR$/Laravel_Hootpedia/vendor/paragonie/constant_time_encoding" />
+      <path value="$PROJECT_DIR$/Laravel_Hootpedia/vendor/dasprid/enum" />
+      <path value="$PROJECT_DIR$/Laravel_Hootpedia/vendor/bacon/bacon-qr-code" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.3" />
