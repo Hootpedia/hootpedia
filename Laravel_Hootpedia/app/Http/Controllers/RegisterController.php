@@ -3,31 +3,34 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\ValidationException;
 
 class RegisterController extends Controller
 {
+    //simply redirects to register view (which is home because of our modals)
     public function create(){
         redirect()->to('view/home');
     }
 
+    //makes new user from request, validates, saves user to the database, then automatically logs user in
     public function store()
     {
-        /* dump(\request()->all());
-         }*/
+
         $user = new User();
-        $user->username = request('username');
+        $user->name = request('username');
         $user->password = request('password');
         $user->email = request('email');
 
 
-        $this->validate(request(), [
+        try {
+            $this->validate(request(), [
                 'username' => 'required',
                 'email' => 'required|email',
                 'password' => 'required'
             ]);
+        } catch (ValidationException $e) {
+        }
 
         $user->save();
         //auth()->login($user);

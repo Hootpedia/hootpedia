@@ -276,12 +276,17 @@
                        </script>--}}
 
             @elseif(auth()->check())
-                    <ul>
+                    <ul class="navbar-nav text-right">
                         <li class="nav-item">
-                            <button>{{auth()->user()->name}}</button>
+                            <button>
+                                {{auth()->user()->name}}
+                                <img src="https://cdn.discordapp.com/attachments/754460456206336021/758102864009887814/unknown.png" width="25">
+                            </button>
                         </li>
                         <li class="nav-item">
-                            <a href="/logout">Logout</a>
+                            <button>
+                                <a href="/logout" style="color:white ">Logout</a>
+                            </button>
                         </li>
                     </ul>
             @endif
