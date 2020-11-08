@@ -21,14 +21,18 @@ Route::get('/home', function () {
     return view('home');
 });
 
-Route::get('/view/login', function () {
-    return view('auth.login');
-});
+/*Route::get('/view/login', function () {
+    return view('home');
+});*/
 
-Route::get('/view/register', function () {
+/*Route::get('/view/register', function () {
     return view('auth.registration.create');
-});
+});*/
 
-Route::post('/register','RegisterController@store');
 Route::get('/register','RegisterController@create');
+Route::post('/register','RegisterController@store');
+//Route::post('/login','SessionController@authenticate');
+Route::get('/logout','SessionController@destroy');
+
+
 

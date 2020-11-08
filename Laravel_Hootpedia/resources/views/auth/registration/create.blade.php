@@ -141,7 +141,9 @@
 <body>
 
 
+{{--
 <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+--}}
 
 <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Registration</button>
 
@@ -192,7 +194,7 @@
                <label for="uname"><b>Enter a Username:</b></label>
                <input type="text" class="form-control" placeholder="Username" name="uname" required>
            </div>
-           <div class="form-control">
+           <div class="form-group">
                <label for="email"><b>Enter E-mail:</b></label>
                <input type="text" class="form-control" placeholder="E-mail" name="email" required>
            </div>
@@ -202,7 +204,7 @@
                <input type="password" class="form-control" placeholder="Enter Password" name="psw" required>
            </div>
            <label for="confirm_psw"><b>Confirm Password:</b></label>
-           <input type="password" placeholder="Confirm Password" name="psw" required>
+           <input type="password" placeholder="Confirm Password" name="confirm_psw" required>
 
            <button type="submit">Register</button>
            <label>

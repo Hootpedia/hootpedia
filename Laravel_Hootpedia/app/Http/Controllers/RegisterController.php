@@ -4,28 +4,35 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Validation\ValidationException;
 
 class RegisterController extends Controller
 {
+    public function create(){
+        redirect()->to('view/home');
+    }
+
     public function store()
     {
         /* dump(\request()->all());
          }*/
-        /*$user = new User();
-        $user->name = \request('uname');
-        $user->password = \request('psw');
-        $user->email = \request('email');
-        $user->save();*/
+        $user = new User();
+        $user->username = request('username');
+        $user->password = request('password');
+        $user->email = request('email');
+
+
         $this->validate(request(), [
-            'name' => 'required',
-            'email' => 'required|email',
-            'password' => 'required'
-        ]);
+                'username' => 'required',
+                'email' => 'required|email',
+                'password' => 'required'
+            ]);
 
-        $user = User::create(request(['name', 'email', 'password']));
+        $user->save();
+        //auth()->login($user);
 
-        auth()->login($user);
-
+        Auth::login($user,true);
         return redirect('/home');
     }
 

@@ -143,13 +143,16 @@
 
 <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
 
+{{--
 <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Registration</button>
+--}}
 
 <! -- Login -->
 
 <div id="id01" class="modal">
 
     <form class="modal-content animate" action="/login" method="POST">
+        @csrf
         <div class="imgcontainer">
             <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
             <a href="https://imgbb.com/"><img src="https://i.ibb.co/HY2p0yK/Hootpedia-logo-removebg-preview-1.png" alt="Hootpedia-logo-removebg-preview-1" border="0"></a>
@@ -216,7 +219,7 @@
 
 <script>
     document.querySelector('.register').onclick = function(){
-        var password = document.querySelector('.psw').value,
+        let password = document.querySelector('.psw').value,
             confirmPassword = document.querySelector('.confirm_psw').value;
 
         if(psw ==""){
@@ -247,7 +250,7 @@
 
 <script>
     // Get the modal
-    var modal = document.getElementById('id02');
+    let modal = document.getElementById('id02');
 
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function (event) {
