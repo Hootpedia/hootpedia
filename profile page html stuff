@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--<?php include 'header.php'; ?>-->
+    <title>UserProfile</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="" type="image/gif" sizes="16x16">
+
+    <!-- Bootstrap & Core CSS, Font -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+
+    <!--- font-family: 'Merriweather', serif; --->
+    <!--font-family: 'Noto Serif', serif;-->
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-md bg-light navbar-light sticky-top shadow-sm px-5">
+        <a class="navbar-brand" href="index.html">
+            <div class="d-flex">
+                <img src="https://cdn.discordapp.com/attachments/754460456206336021/758102864009887814/unknown.png" width="100">
+                <h2 class="pl-3 pt-4" style="font-family: Noto Serif, serif; font-weight: bold; ">Hootpedia</h2>
+            </div>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse flex-grow-0 ml-auto mr-1" id="collapsibleNavbar">
+            <ul class="navbar-nav text-right">
+                <li class="nav-item">
+                    <a class="nav-link font-weight-bold text-dark" href="#">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font-weight-bold text-dark" href="#">BIO</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</head>
+
+<br>
+<br>
+<br>
+
+
+<body>
+
+    <img src="myfile" alt="(user image shows up here after submit)" width="104" height="142">
+
+    <form action="/action_page.php">
+        <label for="myfile">Select a file:</label>
+        <input type="file" id="myfile" name="myfile"><br>
+        <input type="submit">
+    </form>
+    <br>
+    <br>
+    <h2>Type your bio here (bio also displayed after submit, edit button appears after initial submit for editing)</h2>
+
+    <form action="/action_page.php">
+        <textarea name="message" rows="10" cols="30"></textarea>
+        <br>
+        <input type="submit">
+    </form>
+
+</body>
+
+<!-- Footer -->
+<footer class="bg-dark text-light shadow-lg" style="height:100px;">
+    <div class="container text-center p-5">
+    </div>
+</footer>
+
+
+</html>
