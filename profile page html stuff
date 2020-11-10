@@ -45,8 +45,7 @@
 </head>
 
 <br>
-<br>
-<br>
+
 
 
 <body>
@@ -68,13 +67,17 @@
         <input type="submit">
     </form>
 
+    <br> <br>
+    <br> <br>
+    <br> <br>
+    <br> 
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light shadow-lg" style="height:200px;">
+        <div class="container text-center p-5">
+            <p>This is a test footer.</p>
+        </div>
+    </footer>
 </body>
-
-<!-- Footer -->
-<footer class="bg-dark text-light shadow-lg" style="height:100px;">
-    <div class="container text-center p-5">
-    </div>
-</footer>
-
 
 </html>
