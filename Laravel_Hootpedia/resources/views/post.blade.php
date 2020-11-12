@@ -11,7 +11,7 @@
     <!-- Testing Positioning for sidebar content-->
     <div class="row" style="height:100%;">
 		<div class="col-md-9">
-			@include('includes.frontpage')
+			@include('includes.post')
 		</div>
 
         <!-- Responsive Sidebar, Defaults to bottom on Small Screens -->
