@@ -40,8 +40,8 @@ Route::get('/post', function () {
 
 Route::get('/register','RegisterController@create');
 Route::post('/register','RegisterController@store');
-//Route::post('/login','SessionController@authenticate');
-Route::get('/logout','SessionController@destroy');
+Route::post('/login','SessionsController@store');
+Route::get('/logout','SessionsController@destroy');
 
 
 
