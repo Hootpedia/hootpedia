@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8aefaee7-c04b-4815-90fa-1d4b9909b3f5" name="Default Changelist" comment="env">
+    <list default="true" id="8aefaee7-c04b-4815-90fa-1d4b9909b3f5" name="Default Changelist" comment="***********&#10; Notes&#10;***********&#10; Articles controller + model added, still editing views, Ludzen Kyle and I plan to make a modal to add posts as well">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ArticlesController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Article.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/ArticleFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_15_180406_create_articles_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RegisterController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,17 +36,6 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="database.sqlite" type="feb32156:DbDataSourceImpl" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="database.sqlite" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="database.sqlite" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
-      </path>
     </expand>
     <select />
   </component>
@@ -61,6 +53,11 @@
         </map>
       </branch-storage>
     </favorite-branches>
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Wilmayer Dure &lt;wdure2018@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="PUSH_TAGS">
       <GitPushTagMode>
         <option name="argument" value="--follow-tags" />
@@ -200,11 +197,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DataGrid.QuickDoc.View" value="transposed" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/database/database.sqlite" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="settings.editor.selected.configurable" value="database.main" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -212,6 +210,33 @@
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="database.sqlite: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="database.sqlite: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@7b4749c6" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="database.sqlite: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@5c76ed5a" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
@@ -228,7 +253,9 @@
       <workItem from="1602627517600" duration="618000" />
       <workItem from="1602628665217" duration="92000" />
       <workItem from="1602693944137" duration="264000" />
-      <workItem from="1605312265347" duration="2625000" />
+      <workItem from="1605312265347" duration="2802000" />
+      <workItem from="1605461775732" duration="7639000" />
+      <workItem from="1605539684651" duration="4879000" />
     </task>
     <task id="LOCAL-00001" summary="env">
       <created>1602628489178</created>
@@ -251,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605312364422</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="env">
+      <created>1605320764799</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1605320764799</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,18 +293,28 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="env" />
-    <option name="LAST_COMMIT_MESSAGE" value="env" />
+    <MESSAGE value="articles controller added, implementation almost complete" />
+    <MESSAGE value="***********&#10; Notes&#10;***********&#10; Articles controller + model added, still editing views, Ludzen Kyle and I plan to make a modal to add posts as well" />
+    <option name="LAST_COMMIT_MESSAGE" value="***********&#10; Notes&#10;***********&#10; Articles controller + model added, still editing views, Ludzen Kyle and I plan to make a modal to add posts as well" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="197" y="76" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605319926493">
+    <state x="197" y="76" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605465320496">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="197" y="76" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1605319926493" />
-    <state x="284" y="20" key="CommitChangelistDialog2" timestamp="1605320735451">
+    <state x="197" y="76" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1605465320496" />
+    <state x="883" y="175" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605465002064">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="883" y="175" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.834@0.0.1536.834" timestamp="1605465002064" />
+    <state x="284" y="20" key="CommitChangelistDialog2" timestamp="1605553206016">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="266" y="25" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1602628488902" />
-    <state x="284" y="20" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1605320735451" />
+    <state x="284" y="20" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1605553206016" />
+    <state width="254" height="195" key="DatabaseViewActions_Filter" timestamp="1605465309266">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="254" height="195" key="DatabaseViewActions_Filter/0.0.1536.834@0.0.1536.834" timestamp="1605465309266" />
     <state x="107" y="93" width="1323" height="649" key="DiffContextDialog" timestamp="1605320187255">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -284,29 +328,58 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="538" y="376" key="Github.CreateGistDialog/0.0.1440.900@0.0.1440.900" timestamp="1602630077009" />
-    <state width="1398" height="238" key="GridCell.Tab.0.bottom" timestamp="1602627487666">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="697" height="213" key="GridCell.Tab.0.bottom" timestamp="1605465921733">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1398" height="238" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1602627487666" />
-    <state width="1398" height="238" key="GridCell.Tab.0.center" timestamp="1602627487662">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="697" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1605465921733" />
+    <state width="697" height="213" key="GridCell.Tab.0.center" timestamp="1605465921733">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1398" height="238" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1602627487662" />
-    <state width="1398" height="238" key="GridCell.Tab.0.left" timestamp="1602627487660">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="697" height="213" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1605465921733" />
+    <state width="697" height="213" key="GridCell.Tab.0.left" timestamp="1605465921732">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1398" height="238" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1602627487660" />
-    <state width="1398" height="238" key="GridCell.Tab.0.right" timestamp="1602627487662">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="697" height="213" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1605465921732" />
+    <state width="697" height="213" key="GridCell.Tab.0.right" timestamp="1605465921733">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1398" height="238" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1602627487662" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1602630044589">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="697" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1605465921733" />
+    <state x="270" y="59" key="SettingsEditor" timestamp="1605465493153">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="270" y="59" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1605465493153" />
+    <state x="341" y="176" key="Vcs.Push.Dialog.v2" timestamp="1605320778249">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1602630044589" />
+    <state x="341" y="176" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1605320778249" />
+    <state x="660" y="306" width="332" height="237" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1605465458254">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="660" y="306" width="332" height="237" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1536.834@0.0.1536.834" timestamp="1605465458254" />
+    <state x="523" y="171" key="com.intellij.database.run.ParametersPanel.Standalone" timestamp="1605465898972">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="523" y="171" key="com.intellij.database.run.ParametersPanel.Standalone/0.0.1536.834@0.0.1536.834" timestamp="1605465898972" />
+    <state x="478" y="54" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1605465408528">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="478" y="54" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1536.834@0.0.1536.834" timestamp="1605465408528" />
+    <state x="457" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1605539779431">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="457" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1605539779431" />
     <state x="533" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602630949722">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="533" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1602630949722" />
+    <state x="814" y="154" width="672" height="678" key="search.everywhere.popup" timestamp="1605463471569">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="814" y="154" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1605463471569" />
   </component>
 </project>

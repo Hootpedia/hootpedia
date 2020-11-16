@@ -29,6 +29,9 @@ Route::get('/post', function () {
     return view('post');
 });
 
+Route::get('/newpost', function(){
+    return view('post');
+});
 
 /*Route::get('/view/login', function () {
     return view('home');
@@ -40,8 +43,19 @@ Route::get('/post', function () {
 
 Route::get('/register','RegisterController@create');
 Route::post('/register','RegisterController@store');
+
 Route::post('/login','SessionsController@store');
 Route::get('/logout','SessionsController@destroy');
+
+
+
+
+Route::get('/articles', 'ArticlesController@index');
+Route::get('/articles/create', 'ArticlesController@create');
+Route::get('/articles/{articles}', 'ArticlesController@show');
+
+
+
 
 
 
