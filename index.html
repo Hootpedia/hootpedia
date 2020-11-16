@@ -16,7 +16,6 @@
 
 			<!--- font-family: 'Merriweather', serif; --->
 			<!--font-family: 'Noto Serif', serif;-->
-
 	</head>
 
 	<body>
@@ -24,7 +23,7 @@
 		<nav class="navbar navbar-expand-md bg-light navbar-light sticky-top shadow-sm px-5">
 		  <a class="navbar-brand" href="index.html">
 		   <div class="d-flex">
-		      <img src="https://cdn.discordapp.com/attachments/754460456206336021/758102864009887814/unknown.png" width="100">
+		      <img src="images/HootpediaLogo.png" width="100">
 		       <h2 class="pl-3 pt-4" style="font-family: Noto Serif, serif; font-weight: bold; ">Hootpedia</h2>
 		   </div>  
 		</a>
@@ -36,8 +35,44 @@
 		  <div class="collapse navbar-collapse flex-grow-0 ml-auto mr-1" id="collapsibleNavbar">
 			<ul class="navbar-nav text-right">
 			  <li class="nav-item">
-				<a class="nav-link font-weight-bold text-dark" href="#">LOGIN</a>
-			  </li>
+                  
+                  
+                  <!--Login button and page-->
+
+                  <a class="nav-link font-weight-bold text-dark"onclick="document.getElementById('id01').style.display='block'" href="#">LOGIN</a>
+                </li>
+
+    <div id="id01" class="modal ">
+
+        <form class="modal-content animate">
+            <div class="imgcontainer">
+                
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                
+            </div>
+
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit">Login</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+
+            <div class="container" style="background-color:#D9EFF7">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+        </form>
+    </div>
+                  
+			<!--Sign Up Button-->
+                
 			  <li class="nav-item">
 				<a class="nav-link font-weight-bold text-dark" href="#">SIGN UP</a>
 			  </li>
@@ -59,7 +94,7 @@
 							  <h2 class="border border-top-0 border-left-0 border-right-0 py-2">Topic</h2>
 							  <div class="card-body row text-left">
 								<div class="col-3 text-center p-1">
-									<img class="img-fluid border rounded-circle" src="https://cdn.discordapp.com/attachments/754460456206336021/758102864009887814/unknown.png" style="max-width:100px; height:auto;">
+									<img class="img-fluid border rounded-circle" src="images/HootpediaLogo.png" style="max-width:100px; height:auto;">
 								</div>
 								<div class="col-9">
 									<h5 class="card-title">Subject title</h5>
@@ -97,6 +132,7 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 	<script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/style.js"></script>
 
 
  </html>
