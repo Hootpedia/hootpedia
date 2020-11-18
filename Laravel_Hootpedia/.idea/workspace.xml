@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="8aefaee7-c04b-4815-90fa-1d4b9909b3f5" name="Default Changelist" comment="env">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
+=======
+    <list default="true" id="cca40326-fa29-4b14-ae1a-d330ff1dffda" name="Default Changelist" comment="" />
+>>>>>>> Stashed changes
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +18,7 @@
     <execution />
   </component>
   <component name="Git.Settings">
+<<<<<<< Updated upstream
     <favorite-branches>
       <branch-storage>
         <map>
@@ -35,6 +40,9 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
     <option name="UPDATE_TYPE" value="REBASE" />
+=======
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+>>>>>>> Stashed changes
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -148,14 +156,21 @@
       <path value="$PROJECT_DIR$/vendor/ramsey/collection" />
     </include_path>
   </component>
+<<<<<<< Updated upstream
   <component name="ProjectId" id="1iqEdxti76QwHZX3fk9OCLARCyx" />
+=======
+  <component name="ProjectId" id="1jpkEhVKly9Aj8RHCXngvDOxLfU" />
+>>>>>>> Stashed changes
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+<<<<<<< Updated upstream
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+=======
+>>>>>>> Stashed changes
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -172,6 +187,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< Updated upstream
       <changelist id="8aefaee7-c04b-4815-90fa-1d4b9909b3f5" name="Default Changelist" comment="" />
       <created>1602626816962</created>
       <option name="number" value="Default" />
@@ -190,11 +206,23 @@
       <updated>1602628489178</updated>
     </task>
     <option name="localTasksCounter" value="2" />
+=======
+      <changelist id="cca40326-fa29-4b14-ae1a-d330ff1dffda" name="Default Changelist" comment="" />
+      <created>1604508310844</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604508310844</updated>
+      <workItem from="1604508312138" duration="158000" />
+      <workItem from="1604676670631" duration="26000" />
+      <workItem from="1604685420305" duration="66000" />
+    </task>
+>>>>>>> Stashed changes
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+<<<<<<< Updated upstream
   <component name="VcsManagerConfiguration">
     <MESSAGE value="env" />
     <option name="LAST_COMMIT_MESSAGE" value="env" />
@@ -236,5 +264,12 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="533" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1602630949722" />
+=======
+  <component name="WindowStateProjectService">
+    <state x="533" y="334" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604685441816">
+      <screen x="0" y="23" width="1440" height="790" />
+    </state>
+    <state x="533" y="334" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.790@0.23.1440.790" timestamp="1604685441816" />
+>>>>>>> Stashed changes
   </component>
 </project>
