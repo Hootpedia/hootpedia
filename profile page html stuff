@@ -45,40 +45,38 @@
 </head>
 
 <br>
-<br>
 
 <body>
-
-<form action="/action_page.php">
-  <label for="fname">First name:</label>
-  <input type="text" id="fname" name="fname"><br>
-  <label for="lname">Last name:</label>
-  <input type="text" id="lname" name="lname"><br>
-  <input type="submit" value="Submit">
-</form>
-<br>
-<br>
-
     <img src="myfile" alt="(user image shows up here after submit)" width="104" height="142">
-
     <form action="/action_page.php">
         <label for="myfile">Select a file:</label>
         <input type="file" id="myfile" name="myfile"><br>
-        <input type="submit">
-    </form>
-    <br>
-    <br>
-    <h2>Type your bio here (bio also displayed after submit, edit button appears after initial submit for editing)</h2>
+        <br>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
 
-    <form action="/action_page.php">
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+        <br><br>
+        <label for="school">School name:</label>
+        <input type="text" id="school" name="school"><br><br>
+        <h2>Type your bio here:</h2>
         <textarea name="message" rows="10" cols="30"></textarea>
         <br>
-        <input type="submit">
+        <input type="submit" value="Submit">
+        <input type="reset">
     </form>
 
     <br> <br>
     <br> <br>
     <br> <br>
+    <br>
 
     <!-- Footer -->
     <footer class="bg-dark text-light shadow-lg" style="height:200px;">
@@ -89,3 +87,4 @@
 </body>
 
 </html>
+
