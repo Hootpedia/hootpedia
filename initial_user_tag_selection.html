@@ -1,6 +1,37 @@
 <!DOCTYPE html>
 <html>
+<html lang="en">
+<head>
+    <!--<?php include 'header.php'; ?>-->
+    <title>Hootpedia</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="" type="image/gif" sizes="16x16">
+
+    <!-- Bootstrap & Core CSS, Font -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+
+    <!--- font-family: 'Merriweather', serif; --->
+    <!--font-family: 'Noto Serif', serif;-->
+
+</head>
+
 <body>
+
+    <div class="d-flex">
+        <img src="https://cdn.discordapp.com/attachments/754460456206336021/758102864009887814/unknown.png" width="100">
+        <h2 class="pl-3 pt-4" style="font-family: Noto Serif, serif; font-weight: bold; ">Hootpedia</h2>
+    </div>
+
+    <p></p>
+
+
+
 
     <h2>Choose tags you are interested in:</h2>
 
@@ -35,60 +66,62 @@
                 <option value="Android">Android</option>
                 <option value="Linux">Linux</option>
             </select>
-            <p></p>
-            <input type="submit">
-        </form>
+
+            <h2>What computer science fields are you interested in? Click all that apply</h2>
 
 
-        <h2>What computer science fields are you interested in? Click all that apply</h2>
 
-        <form action="/action_page.php" validate>
-            <input type="submit" id="tag" name="tagDS" value="Data Science">
-        </form>
+            <input type="checkbox" id="tag1" name="tagDS" value="Data Science">
+            <label for="tag1">Data Science</label><br>
 
-        <form action="/action_page.php" validate>
-            <input type="submit" id="tag" name="tagML" value="Machine Learning">
-        </form>
 
-        <form action="/action_page.php" validate>
-            <input type="submit" id="tag" name="tagWD" value="Web Development">
-        </form>
+            <input type="checkbox" id="tag2" name="tagML" value="Machine Learning">
+            <label for="tag2">Machine Learning</label><br>
 
-        <form action="/action_page.php" validate>
-            <input type="submit" id="tag" name="tagAlgo" value="Algorithms">
-        </form>
 
-        <form action="/action_page.php" validate>
-            <input type="submit" id="tag" name="tagCrypto" value="Cryptology">
-        </form>
+            <input type="checkbox" id="tag3" name="tagWD" value="Web Development">
+            <label for="tag3">Web Development</label><br>
 
-        <form action="/action_page.php" validate>
-            <input type="submit" id="tag" name="tagHack" value="Hacking">
-        </form>
 
-        <form action="/action_page.php" validate>
-            <input type="submit" id="tag" name="tagOS" value="OS Development">
-        </form>
+            <input type="checkbox" id="tag4" name="tagAlgo" value="Algorithms">
+            <label for="tag4">Algorithms</label><br>
 
-        <form action="/action_page.php" validate>
-            <input type="submit" id="tag" name="tagComp" value="Compiler Development">
-        </form>
 
-        <form action="/action_page.php" validate>
-            <input type="submit" id="tag" name="tagIOT" value="Internet of Things">
-        </form>
+            <input type="checkbox" id="tag5" name="tagCrypto" value="Cryptology">
+            <label for="tag5">Cryptology</label><br>
 
-        <form action="/action_page.php" validate>
-            <input type="submit" id="tag" name="tagRobo" value="Robotics">
-        </form>
 
-        <h2>Type your first post here</h2>
+            <input type="checkbox" id="tag6" name="tagHack" value="Hacking">
+            <label for="tag6">Hacking</label><br>
 
-        <form action="/action_page.php">
+
+            <input type="checkbox" id="tag7" name="tagOS" value="OS Development">
+            <label for="tag7">OS Development</label><br>
+
+
+            <input type="checkbox" id="tag8" name="tagComp" value="Compiler Development">
+            <label for="tag8">Compiler Development</label><br>
+
+
+            <input type="checkbox" id="tag9" name="tagIOT" value="Internet of Things">
+            <label for="tag9">Internet of Things</label><br>
+
+
+            <input type="checkbox" id="tag10" name="tagRobo" value="Robotics">
+            <label for="tag10">Robotics</label><br>
+
+            <h2>Type your first post here</h2>
+
             <textarea name="message" rows="10" cols="30"></textarea>
             <br><br>
             <input type="submit">
         </form>
+
+        <!-- Footer -->
+        <footer class="bg-dark text-light shadow-lg" style="height:100px;">
+            <div class="container text-center p-5">
+            </div>
+        </footer>
 
 </body>
 </html>
