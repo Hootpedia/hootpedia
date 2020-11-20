@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8aefaee7-c04b-4815-90fa-1d4b9909b3f5" name="Default Changelist" comment="***********&#10; Notes&#10;***********&#10; Articles controller + model added, still editing views, Ludzen Kyle and I plan to make a modal to add posts as well">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ArticlesController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Article.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/ArticleFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_15_180406_create_articles_table.php" afterDir="false" />
+    <list default="true" id="8aefaee7-c04b-4815-90fa-1d4b9909b3f5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Article.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/includes/frontpage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/frontpage.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,8 +34,22 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="database.sqlite" type="feb32156:DbDataSourceImpl" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="database.sqlite" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="database.sqlite" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+      </path>
     </expand>
     <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Laravel_Hootpedia" />
   </component>
   <component name="Git.Settings">
     <favorite-branches>
@@ -255,7 +267,7 @@
       <workItem from="1602693944137" duration="264000" />
       <workItem from="1605312265347" duration="2802000" />
       <workItem from="1605461775732" duration="7639000" />
-      <workItem from="1605539684651" duration="4879000" />
+      <workItem from="1605539684651" duration="12589000" />
     </task>
     <task id="LOCAL-00001" summary="env">
       <created>1602628489178</created>
@@ -285,7 +297,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605320764799</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="***********&#10; Notes&#10;***********&#10; Articles controller + model added, still editing views, Ludzen Kyle and I plan to make a modal to add posts as well">
+      <created>1605553437151</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1605553437151</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,11 +325,11 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="883" y="175" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.834@0.0.1536.834" timestamp="1605465002064" />
-    <state x="284" y="20" key="CommitChangelistDialog2" timestamp="1605553206016">
+    <state x="284" y="0" key="CommitChangelistDialog2" timestamp="1605553433785">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="266" y="25" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1602628488902" />
-    <state x="284" y="20" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1605553206016" />
+    <state x="284" y="0" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1605553433785" />
     <state width="254" height="195" key="DatabaseViewActions_Filter" timestamp="1605465309266">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -352,11 +371,11 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="270" y="59" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1605465493153" />
-    <state x="341" y="176" key="Vcs.Push.Dialog.v2" timestamp="1605320778249">
+    <state x="341" y="176" key="Vcs.Push.Dialog.v2" timestamp="1605629112648">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1602630044589" />
-    <state x="341" y="176" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1605320778249" />
+    <state x="341" y="176" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1605629112648" />
     <state x="660" y="306" width="332" height="237" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1605465458254">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -377,6 +396,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="533" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1602630949722" />
+    <state x="378" y="128" key="git4idea.branch.GitSmartOperationDialog" timestamp="1605894695089">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="378" y="128" key="git4idea.branch.GitSmartOperationDialog/0.0.1536.834@0.0.1536.834" timestamp="1605894695089" />
     <state x="814" y="154" width="672" height="678" key="search.everywhere.popup" timestamp="1605463471569">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

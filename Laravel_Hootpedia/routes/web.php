@@ -29,8 +29,8 @@ Route::get('/post', function () {
     return view('post');
 });
 
-Route::get('/newpost', function(){
-    return view('post');
+Route::get('/post', function(){
+    return view('\post');
 });
 
 /*Route::get('/view/login', function () {

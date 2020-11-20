@@ -5,6 +5,7 @@
 		<p>Article blocks go here.</p>
 
 		<!-- Cards for user Discussions -->
+        @foreach($article as $articles)
 		<div class="card mx-auto d-flex justify-content-center shadow" style="width: 60%; min-width:25rem;">
 			<h2 class="border border-top-0 border-left-0 border-right-0 py-2">Topic</h2>
 			<div class="card-body row text-left">
@@ -22,5 +23,6 @@
 				</div>
 			</div>
 		</div>
+            @endforeach
 	</div>
 </div>
