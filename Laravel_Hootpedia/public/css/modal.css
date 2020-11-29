@@ -81,3 +81,8 @@ img.avatar {
 		opacity: 1
 	}
 }
+
+
+.modal-backdrop {
+	z-index: 0 !important;
+}
