@@ -18,7 +18,7 @@
 					<label for="email"><b>E-mail</b></label>
 					<input class="form-control" type="text" placeholder="E-mail" name="email" required>
 				</div>
-				
+
 				<div class="form-group">
 					<label for="password"><b>Password</b></label>
 					<input class="form-control" type="password" placeholder="Enter Password" name="password" required>

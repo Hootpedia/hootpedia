@@ -10,32 +10,32 @@
 
     <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script>
-  
+
    <script src="script.js"></script>
 </head>
 <body>
 	<div class="container">
 	<h1 class="pt-5">New Post</h1>
-		
+
 	  <!--Use This form to submit summernote to php-->
-	  <form id="sampleForm" name="sampleForm" method="post" action="index.php">
-		<div class="form-check">
-			<div class="py-2">
-				<label class="form-check-label" for="postHeader">Title: </label>
-				<input  class="form-control" type="text" name="postHeader" id="postHeader" required>
+	  <form {{--id="sampleForm" name="sampleForm"--}} method="POST" action="/save_Article">
+          @csrf
+
+			<div class="py-2 form-group">
+				<label class="form-check-label" for="title">Title: </label>
+				<input  class="form-control" type="text" name="title" id="title" required>
 			</div>
-			<div class="py-2">
-				<label class="form-check-label" for="postContent">Content: </label>
+			<div class="py-2 form-group">
+				<label class="form-check-label" for="content">Content: </label>
 				<div id="summernote"></div>
-				<input type="hidden" name="postContent" id="postContent" value="">
+				<input type="text" class="form-control" name="content" id="content" required>
 			</div>
 			<div class="py-2">
 				<button id="submitbutton" class="btn btn-primary">Submit</button>
 			</div>
-		</div>
 	  </form>
 	</div>
-  
+
   <script>
       $('#summernote').summernote({
         placeholder: 'Enter Content Here',
@@ -43,7 +43,7 @@
         height: 400
       });
   </script>
-  
+
   <script type="text/javascript" src="{{ asset('js/newpost.js') }}"></script>
 </body>
 </html>

@@ -7,6 +7,7 @@
         </div>
     </a>
 
+
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -15,6 +16,7 @@
         <div class="collapse navbar-collapse flex-grow-0 ml-auto mr-1" id="collapsibleNavbar">
             <ul class="navbar-nav text-right">
                 @if(!auth()->check())
+
                 <button onclick="document.getElementById('id01').style.display='block'" class="mx-1 btn btn-outline-primary">Login</button>
                 <button onclick="document.getElementById('id02').style.display='block'" class="mx-1 btn btn-outline-primary">Register</button>
 
@@ -51,16 +53,27 @@
                        </script>--}}
 
             @elseif(auth()->check())
+                    <form action="/search" method="GET" role="search">
+                        @csrf
+                        <div class="input-group">
+                            <input type="text" class="form-control" name="q"
+                                   placeholder="Search"> <span class="input-group-btn">
+            <button type="submit" class="btn btn-default">
+                <span class="glyphicon glyphicon-search"></span>
+            </button>
+        </span>
+                        </div>
+                    </form>
                     <ul class="navbar-nav text-right">
                         <li class="nav-item">
-                            <button>
+                            <button class="mx-1 btn btn-outline-primary">
                                 {{auth()->user()->name}}
                                 <img src="https://cdn.discordapp.com/attachments/754460456206336021/758102864009887814/unknown.png" width="25">
                             </button>
                         </li>
                         <li class="nav-item">
-                            <button>
-                                <a href="/logout" style="color:white ">Logout</a>
+                            <button class="mx-1 btn btn-outline-primary">
+                                <a href="/logout" >Logout</a>
                             </button>
                         </li>
                     </ul>

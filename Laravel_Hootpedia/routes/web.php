@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Symfony\Component\Console\Input\Input;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,7 +19,9 @@ use Illuminate\Support\Facades\Route;
 });*/
 
 Route::get('/', function () {
-    return view('home');
+    return view('home',[
+        'articles'=> App\Models\Article::latest()->get()
+    ]);
 });
 
 Route::get('/newpost', function () {
@@ -29,9 +32,16 @@ Route::get('/post', function () {
     return view('post');
 });
 
-Route::get('/post', function(){
-    return view('\post');
-});
+
+
+/*Route::get('/search', function (Request $request) {
+    if (isset($request->search)) {
+        return App\Models\Article::search($request->search)->get();
+    }
+});*/
+/*Route::get('/post', function(){
+    return view('post');
+});*/
 
 /*Route::get('/view/login', function () {
     return view('home');
@@ -49,10 +59,10 @@ Route::get('/logout','SessionsController@destroy');
 
 
 
-
+Route::post('/save_Article', 'ArticlesController@store');
 Route::get('/articles', 'ArticlesController@index');
 Route::get('/articles/create', 'ArticlesController@create');
-Route::get('/articles/{articles}', 'ArticlesController@show');
+Route::get('/articles/{articles}', 'ArticlesController@results');
 
 
 

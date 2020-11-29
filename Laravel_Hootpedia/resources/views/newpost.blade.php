@@ -15,9 +15,9 @@
 		</div>
 
         <!-- Responsive Sidebar, Defaults to bottom on Small Screens -->
-        <div class="col-md-3 bg-light p-3">
+       {{-- <div class="col-md-3 bg-light p-3">
 			@include('includes.sidebar')
-        </div>
+        </div>--}}
     </div>
 
 </div>

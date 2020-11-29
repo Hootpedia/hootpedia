@@ -5,7 +5,9 @@
 		<p>Article blocks go here.</p>
 
 		<!-- Cards for user Discussions -->
-        @foreach($article as $articles)
+       {{-- <?php $count= DB::table('articles')->count();?>
+        @for($i=0;$i<5;$i++)--}}
+        @foreach($articles ?? '' as $article)
 		<div class="card mx-auto d-flex justify-content-center shadow" style="width: 60%; min-width:25rem;">
 			<h2 class="border border-top-0 border-left-0 border-right-0 py-2">Topic</h2>
 			<div class="card-body row text-left">
@@ -15,10 +17,9 @@
 						 style="max-width:100px; height:auto;">
 				</div>
 				<div class="col-9">
-					<h5 class="card-title">Subject title</h5>
-					<p class="small text-secondary">Author Name</p>
-					<p class="card-text">Some quick example text to build on the card title and make up the bulk
-						of the card's content.</p>
+					<h5 class="card-title">{{$article->title}}</h5>
+					<p class="small text-secondary">{{$article->title}}</p>
+					<p class="card-text">{{$article->body}}</p>
 					<a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
 				</div>
 			</div>

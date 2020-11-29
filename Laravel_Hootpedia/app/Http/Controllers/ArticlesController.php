@@ -10,14 +10,17 @@ class ArticlesController extends Controller
     public function index()
     {
         //renders a list
-        $articles=Article::Latest()->get();
-        return view('articles.index',['articles'=>$articles]);
+        $article=Article::latest()->get();
+        //$article=Article::query()->where('title', 'Like', '%' . request('term') . '%');
+
+       $article->orderBy('id', 'DESC')->paginate(10);
+       //return view('articles.results',['article'=>$article]);
     }
 
-    public function show($id)
+    public function show($title) //$title was $id
     {
         //shows a single resource
-        $article = Article::find($id);
+        $article = Article::find($title);
         return view('articles.show', ['article'=>$article]);
     }
 
@@ -29,6 +32,13 @@ class ArticlesController extends Controller
 
     public function store()
     {
+        $article = new Article();
+        $article->title = request('title');
+        $article->content = request('content');
+
+        $article->save();
+
+        return redirect('/articles.results');
         //persist new resource
     }
 

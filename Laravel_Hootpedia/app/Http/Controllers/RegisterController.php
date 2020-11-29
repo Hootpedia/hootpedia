@@ -21,12 +21,14 @@ class RegisterController extends Controller
         $user->name = request('username');
         $user->password = request('password');
         $user->email = request('email');
-
+        $rules = [
+            'email' => 'required|ends_with:fau.edu',
+        ];
 
         try {
             $this->validate(request(), [
                 'username' => 'required',
-                'email' => 'required|email',
+                'email' => 'required|email|max:255|unique:users|regex:/(.*)\.myemail\.edu$/i',
                 'password' => 'required'
             ]);
         } catch (ValidationException $e) {
