@@ -27,14 +27,23 @@
 			</div>
           <div class="py-2 form-group">
               <label class="form-check-label" for="title">Tag: </label>
-              <input  class="form-control" type="text" name="tag" id="tag" required>
+              <!--<input  class="form-control" type="text" name="tag" id="tag" required>-->
+			  <select class="form-control" name="tag" id="tag">
+				<option>Fundamemtals</option>
+				<option>C/C++</option>
+				<option>Java</option>
+				<option>HTML/CSS</option>
+				<option>Javascript</option>
+				<option>Python</option>
+				<option>SQL</option>
+			  </select>
           </div>
 			<div class="py-2 form-group">
 				<label class="form-check-label" for="content">Content: </label>
                 {{--
 				<div class="form-control" type="hidden" name="content"id="summernote"></div>
 				--}}
-                <input type="text" class="form-control" name="content" id="content" required>
+                <textarea class="form-control" rows="5" name="content" id="content" required></textarea>
 			</div>
 			<div class="py-2 form-group">
 				<button id="submitbutton" type="submit" class="btn btn-primary">Submit</button>
