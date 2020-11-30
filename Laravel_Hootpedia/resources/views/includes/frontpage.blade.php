@@ -17,12 +17,33 @@
 				<div class="col-9">
 					<h5 class="card-title">{{$article->title}}</h5>
 					<p class="small text-secondary">{{$article->content}}</p>
-					<a href="/articles/show" class="btn btn-sm btn-outline-primary">Read More</a>
+					<button type="button" class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#exampleModalCenter">
+					Read More
+					</button>
 				</div>
 			</div>
 		</div>
             <br>
             @endforeach
 	</div>
+
 </div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered w-75" role="document">
+	<div class="modal-content  w-100">
+	  <div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		  <span aria-hidden="true">&times;</span>
+		</button>
+	  </div>
+	  <div class="modal-body">
+		@include('includes.post')
+	  </div>
+	  <div class="modal-footer">
+		<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	  </div>
+	</div>
+  </div>	
 

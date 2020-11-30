@@ -86,3 +86,8 @@ img.avatar {
 .modal-backdrop {
 	z-index: 0 !important;
 }
+
+.modal-dialog
+{
+	max-width:80% !important;
+}
