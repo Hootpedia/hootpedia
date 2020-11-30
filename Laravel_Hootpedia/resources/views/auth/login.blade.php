@@ -160,10 +160,16 @@
 
         <div class="container">
             <label for="uname"><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="uname" required>
+            <input type="text {{@errors->has('uname') ? 'is-danger' : ''}}" placeholder="Enter Username" name="uname" required>
+            @if ($errors->has('uname'))
+                <p class="help is-danger">{{$errors->first('uname')}}</p>
+            @endif
 
             <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
+            <input type="password {{@errors->has('psw') ? 'is-danger' : ''}}" placeholder="Enter Password" name="psw" required>
+            @if ($errors->has('psw'))
+                <p class="help is-danger">{{$errors->first('psw')}}</p>
+            @endif
 
             <button type="submit">Login</button>
             <label>

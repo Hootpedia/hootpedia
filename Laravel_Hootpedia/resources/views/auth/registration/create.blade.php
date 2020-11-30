@@ -192,16 +192,37 @@
 
            <div class="form-group">
                <label for="uname"><b>Enter a Username:</b></label>
-               <input type="text" class="form-control" placeholder="Username" name="uname" required>
+               <input
+                   type="text {{@errors->has('uname') ? 'is-danger' : ''}}"
+                   class="form-control"
+                   placeholder="Username" name="uname"
+                   value="{{old('uname')}}"required>
+
+               @if ($errors->has('uname'))
+                   <p class="help is-danger">{{$errors->first('uname')}}</p>
+               @endif
            </div>
            <div class="form-group">
                <label for="email"><b>Enter E-mail:</b></label>
-               <input type="text" class="form-control" placeholder="E-mail" name="email" required>
+               <input
+                   type="text  {{@errors->has('uname') ? 'is-danger' : ''}}"
+                   class="form-control"
+                   placeholder="E-mail"
+                   name="email"
+                   value="{{old('email')}}required>
+
+               @if ($errors->has('email'))
+                   <p class="help is-danger">{{$errors->first('email')}}</p>
+               @endif
            </div>
 
            <div class="form-group">
                <label for="psw"><b>Enter a Password:</b></label>
-               <input type="password" class="form-control" placeholder="Enter Password" name="psw" required>
+               <input type="password {{@errors->has('uname') ? 'is-danger' : ''}}" class="form-control" placeholder="Enter Password" name="psw" required>
+
+               @if ($errors->has('psw'))
+                   <p class="help is-danger">{{$errors->first('psw')}}</p>
+               @endif
            </div>
            <label for="confirm_psw"><b>Confirm Password:</b></label>
            <input type="password" placeholder="Confirm Password" name="confirm_psw" required>
