@@ -22,8 +22,8 @@
 
 <div class="container-fluid">
     <!-- Testing Positioning for sidebar content-->
-    <div class="row" style="height:100%;">
-		<div class="col-md-9">
+    <div class="row" style="min-height:100%;">
+		<div class="col-md-12">
 			@include('includes.frontpage')
 		</div>
 
@@ -50,10 +50,6 @@
             @endif
         </div>--}}
 
-        <!-- Responsive Sidebar, Defaults to bottom on Small Screens -->
-      {{--  <div class="col-md-3 bg-light p-3">
-			@include('includes.sidebar')
-        </div>--}}
     </div>
 
 </div>
