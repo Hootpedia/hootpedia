@@ -53,18 +53,26 @@
                        </script>--}}
 
             @elseif(auth()->check())
-                    <form action="/search" method="GET" role="search">
-                        @csrf
-                        <div class="input-group">
-                            <input type="text" class="form-control" name="q"
-                                   placeholder="Search"> <span class="input-group-btn">
-            <button type="submit" class="btn btn-default">
-                <span class="glyphicon glyphicon-search"></span>
-            </button>
-        </span>
-                        </div>
-                    </form>
                     <ul class="navbar-nav text-right">
+                  <li>
+                      <form action="/search" method="GET" role="search">
+                          @csrf
+                          <div class="input-group">
+                              <input type="text" class="form-control" name="q" placeholder="Search">
+                              <span class="input-group-btn">
+                                <button type="submit" class="btn btn-default">
+{{--                                    <span class="glyphicon glyphicon-search"></span>--}}
+                                </button>
+                            </span>
+                          </div>
+                      </form>
+                  </li>
+
+                        <li class="nav-item">
+                            <a href="/newpost" class="mx-1 btn btn-outline-primary">
+                                {{--<span class="glyphicon glyphicon-circle-arrow-up"></span>--}} Post
+                            </a>
+                        </li>
                         <li class="nav-item">
                             <button class="mx-1 btn btn-outline-primary">
                                 {{auth()->user()->name}}

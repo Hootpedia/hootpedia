@@ -2,14 +2,12 @@
 	<!--Article Example-->
 	<h1 class="pt-5">Articles/Discussions</h1>
 	<div class="d-inline">
-		<p>Article blocks go here.</p>
 
-		<!-- Cards for user Discussions -->
-       {{-- <?php $count= DB::table('articles')->count();?>
-        @for($i=0;$i<5;$i++)--}}
+		<!-- Cards for Article Display -->
+
         @foreach($articles ?? '' as $article)
 		<div class="card mx-auto d-flex justify-content-center shadow" style="width: 60%; min-width:25rem;">
-			<h2 class="border border-top-0 border-left-0 border-right-0 py-2">Topic</h2>
+			<h2 class="border border-top-0 border-left-0 border-right-0 py-2">{{$article->tag}}</h2>
 			<div class="card-body row text-left">
 				<div class="col-3 text-center p-1">
 					<img class="img-fluid border rounded-circle"
@@ -18,12 +16,13 @@
 				</div>
 				<div class="col-9">
 					<h5 class="card-title">{{$article->title}}</h5>
-					<p class="small text-secondary">{{$article->title}}</p>
-					<p class="card-text">{{$article->body}}</p>
-					<a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
+					<p class="small text-secondary">{{$article->content}}</p>
+					<a href="/articles/show" class="btn btn-sm btn-outline-primary">Read More</a>
 				</div>
 			</div>
 		</div>
+            <br>
             @endforeach
 	</div>
 </div>
+

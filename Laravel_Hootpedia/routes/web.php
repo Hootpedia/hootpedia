@@ -59,10 +59,15 @@ Route::get('/logout','SessionsController@destroy');
 
 
 
-Route::post('/save_Article', 'ArticlesController@store');
+Route::post('/save', 'ArticlesController@store');
 Route::get('/articles', 'ArticlesController@index');
+Route::get('/articles/show', 'ArticlesController@show');
+
 Route::get('/articles/create', 'ArticlesController@create');
 Route::get('/articles/{articles}', 'ArticlesController@results');
+
+Route::get('search', 'SearchController@index')->name('search');
+Route::get('autocomplete', 'SearchController@autocomplete')->name('autocomplete');
 
 
 

@@ -15,8 +15,9 @@ class CreateArticlesTable extends Migration
     {
         Schema::create('articles', function (Blueprint $table) {
             $table->id();
+            $table->string('tag');
             $table->string('title');
-            $table->text('content');
+            $table->longText('content');
             $table->timestamps();
         });
     }

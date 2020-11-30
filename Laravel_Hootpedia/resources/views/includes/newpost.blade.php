@@ -18,20 +18,26 @@
 	<h1 class="pt-5">New Post</h1>
 
 	  <!--Use This form to submit summernote to php-->
-	  <form {{--id="sampleForm" name="sampleForm"--}} method="POST" action="/save_Article">
+	  <form {{--id="sampleForm" name="sampleForm"--}} method="POST" action="/save">
           @csrf
 
 			<div class="py-2 form-group">
 				<label class="form-check-label" for="title">Title: </label>
 				<input  class="form-control" type="text" name="title" id="title" required>
 			</div>
+          <div class="py-2 form-group">
+              <label class="form-check-label" for="title">Tag: </label>
+              <input  class="form-control" type="text" name="tag" id="tag" required>
+          </div>
 			<div class="py-2 form-group">
 				<label class="form-check-label" for="content">Content: </label>
-				<div id="summernote"></div>
-				<input type="text" class="form-control" name="content" id="content" required>
+                {{--
+				<div class="form-control" type="hidden" name="content"id="summernote"></div>
+				--}}
+                <input type="text" class="form-control" name="content" id="content" required>
 			</div>
-			<div class="py-2">
-				<button id="submitbutton" class="btn btn-primary">Submit</button>
+			<div class="py-2 form-group">
+				<button id="submitbutton" type="submit" class="btn btn-primary">Submit</button>
 			</div>
 	  </form>
 	</div>

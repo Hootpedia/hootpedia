@@ -1,11 +1,24 @@
 <html lang="en">
 <head>
+    <style>
+        p {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 300px;
+        }
+    </style>
 	@include('includes.head')
+{{--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">--}}
+{{--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>--}}
+{{--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>--}}
 </head>
 
 <body>
 <!-- Navigation-->
 @include('includes.navigation')
+<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+
 
 <div class="container-fluid">
     <!-- Testing Positioning for sidebar content-->

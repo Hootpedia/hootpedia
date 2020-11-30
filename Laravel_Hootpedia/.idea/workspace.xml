@@ -1,29 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8aefaee7-c04b-4815-90fa-1d4b9909b3f5" name="Default Changelist" comment="****post, email, search****">
-      <change afterPath="$PROJECT_DIR$/app/Rules/ValidEmail.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/scout.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/articles/results.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/articles/show.blade.php" afterDir="false" />
+    <list default="true" id="8aefaee7-c04b-4815-90fa-1d4b9909b3f5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/Laravel_Hootpedia.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Laravel_Hootpedia.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ArticlesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ArticlesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RegisterController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Article.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/scout.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/scout.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_15_180406_create_articles_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_15_180406_create_articles_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/includes/frontpage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/frontpage.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/includes/navigation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/navigation.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/includes/newpost.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/newpost.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/includes/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/register.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/includes/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/newpost.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/newpost.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
+    <list id="8fddb65c-9b81-426e-9628-34e91ad90ad7" name="Revert &quot;Front Page + Modal Update&quot;" comment="Revert &quot;Front Page + Modal Update&quot;&#10;&#10;This reverts commit 00dfdae2">
+      <change beforePath="$PROJECT_DIR$/public/css/modal.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/modal.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,7 +213,6 @@
       <path value="$PROJECT_DIR$/vendor/paragonie/constant_time_encoding" />
       <path value="$PROJECT_DIR$/vendor/pragmarx/google2fa" />
       <path value="$PROJECT_DIR$/vendor/dasprid/enum" />
-      <path value="$PROJECT_DIR$/vendor/laravel/scout" />
       <path value="$PROJECT_DIR$/vendor/algolia/algoliasearch-client-php" />
     </include_path>
   </component>
@@ -289,7 +284,8 @@
       <workItem from="1605312265347" duration="2802000" />
       <workItem from="1605461775732" duration="7639000" />
       <workItem from="1605539684651" duration="12589000" />
-      <workItem from="1605896988920" duration="26564000" />
+      <workItem from="1605896988920" duration="30888000" />
+      <workItem from="1606698756734" duration="4858000" />
     </task>
     <task id="LOCAL-00001" summary="env">
       <created>1602628489178</created>
@@ -326,7 +322,21 @@
       <option name="project" value="LOCAL" />
       <updated>1605553437151</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="****post, email, search****">
+      <created>1606678620081</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1606678620081</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Revert &quot;Front Page + Modal Update&quot;&#10;&#10;This reverts commit 00dfdae2">
+      <created>1606678820046</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1606678820046</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -337,7 +347,8 @@
     <MESSAGE value="articles controller added, implementation almost complete" />
     <MESSAGE value="***********&#10; Notes&#10;***********&#10; Articles controller + model added, still editing views, Ludzen Kyle and I plan to make a modal to add posts as well" />
     <MESSAGE value="****post, email, search****" />
-    <option name="LAST_COMMIT_MESSAGE" value="****post, email, search****" />
+    <MESSAGE value="Revert &quot;Front Page + Modal Update&quot;&#10;&#10;This reverts commit 00dfdae2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Revert &quot;Front Page + Modal Update&quot;&#10;&#10;This reverts commit 00dfdae2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="249" y="152" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606615481242">
@@ -348,11 +359,11 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="883" y="175" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.834@0.0.1536.834" timestamp="1606669547390" />
-    <state x="284" y="0" key="CommitChangelistDialog2" timestamp="1606678552849">
+    <state x="284" y="0" key="CommitChangelistDialog2" timestamp="1606678816879">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="266" y="25" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1602628488902" />
-    <state x="284" y="0" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1606678552849" />
+    <state x="284" y="0" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1606678816879" />
     <state width="254" height="195" key="DatabaseViewActions_Filter" timestamp="1605465309266">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -394,15 +405,23 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="211" height="499" key="HiddenNamespacesPopup/0.0.1536.834@0.0.1536.834" timestamp="1606615343093" />
+    <state x="294" y="69" key="MergeDialog" timestamp="1606678721816">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="294" y="69" key="MergeDialog/0.0.1536.834@0.0.1536.834" timestamp="1606678721816" />
+    <state x="864" y="135" key="MultipleFileMergeDialog" timestamp="1606678801091">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="864" y="135" key="MultipleFileMergeDialog/0.0.1536.834@0.0.1536.834" timestamp="1606678801091" />
     <state x="270" y="59" key="SettingsEditor" timestamp="1605465493153">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="270" y="59" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1605465493153" />
-    <state x="341" y="176" key="Vcs.Push.Dialog.v2" timestamp="1605629112648">
+    <state x="207" y="176" key="Vcs.Push.Dialog.v2" timestamp="1606678826828">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1602630044589" />
-    <state x="341" y="176" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1605629112648" />
+    <state x="207" y="176" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1606678826828" />
     <state x="660" y="306" width="332" height="237" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1605465458254">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -415,10 +434,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="478" y="54" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1536.834@0.0.1536.834" timestamp="1605465408528" />
-    <state x="457" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1605539779431">
+    <state x="457" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1606698775208">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="457" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1605539779431" />
+    <state x="457" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1606698775208" />
     <state x="569" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606620024972">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

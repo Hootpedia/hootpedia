@@ -17,10 +17,10 @@ class ArticlesController extends Controller
        //return view('articles.results',['article'=>$article]);
     }
 
-    public function show($title) //$title was $id
+    public function show($id) //$title was $id
     {
         //shows a single resource
-        $article = Article::find($title);
+        $article = Article::find($id);
         return view('articles.show', ['article'=>$article]);
     }
 
@@ -33,12 +33,13 @@ class ArticlesController extends Controller
     public function store()
     {
         $article = new Article();
+        $article->tag=request('tag');
         $article->title = request('title');
         $article->content = request('content');
 
         $article->save();
 
-        return redirect('/articles.results');
+        return redirect('/');
         //persist new resource
     }
 
