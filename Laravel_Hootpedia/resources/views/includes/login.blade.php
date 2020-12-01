@@ -11,7 +11,7 @@
 			<div class="container">
 				<div class="form-group">
 					<label for="email"><b>Email</b></label>
-					<input class="form-control" type="text {{@errors->has('email') ? 'is-danger' : ''}}"
+					<input class="form-control" type="text"
                            placeholder="Enter Username" name="email" required>
                     @if ($errors->has('email'))
                         <p class="help is-danger">{{$errors->first('email')}}</p>
@@ -20,7 +20,7 @@
 
 				<div class="form-group">
 					<label for="password"><b>Password</b></label>
-					<input class="form-control" type="password {{@errors->has('password') ? 'is-danger' : ''}}"
+					<input class="form-control" type="password"
                            placeholder="Enter Password" name="password" required>
                     @if ($errors->has('password'))
                         <p class="help is-danger">{{$errors->first('password')}}</p>
