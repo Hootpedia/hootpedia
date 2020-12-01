@@ -89,5 +89,17 @@ img.avatar {
 
 .modal-dialog
 {
-	max-width:80% !important;
+	max-width:100% !important;
+	margin:1.75rem auto !important;
+}
+
+@media (min-width: 991px) {
+	.modal-dialog{
+		max-width:80% !important;
+	}
+}
+
+.modal-body img
+{
+	max-width:100% !important;
 }

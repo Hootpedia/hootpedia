@@ -1,11 +1,12 @@
 <html lang="en">
 <head>
     <style>
-        p {
+        .card p {
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-            max-width: 300px;
+            max-width: 100%;
+			max-height: 300px;
         }
     </style>
 	@include('includes.head')
