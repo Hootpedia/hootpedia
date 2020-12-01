@@ -1,6 +1,6 @@
 <div class="text-center">
 	<!--Article Example-->
-	<h1 class="pt-5">Articles/Discussions</h1>
+	<h1 class="pt-5">Articles</h1>
 	<div class="d-inline">
 
 		<!-- Cards for Article Display -->
@@ -45,5 +45,5 @@
 		<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 	  </div>
 	</div>
-  </div>	
+  </div>
 

@@ -24,9 +24,13 @@ Route::get('/', function () {
     ]);
 });
 
-Route::get('/newpost', function () {
+/*Route::get('/newpost', function () {
     return view('newpost');
-});
+})->middleware('auth');*/
+
+Route::get('/profile', function () {
+    return view('profile');
+})->middleware('auth');
 
 Route::get('/post', function () {
     return view('post');
@@ -61,13 +65,23 @@ Route::get('/logout','SessionsController@destroy');
 
 Route::post('/save', 'ArticlesController@store');
 Route::get('/articles', 'ArticlesController@index');
-Route::get('/articles/show', 'ArticlesController@show');
+Route::get('/articles/html', 'ArticlesController@gettaghtml');
+Route::get('/articles/java', 'ArticlesController@gettagjava');
+Route::get('/articles/python', 'ArticlesController@gettagpython');
+Route::get('/articles/cplusplus', 'ArticlesController@gettagcplusplus');
+Route::get('/articles/fundamentals', 'ArticlesController@gettagfundamentals');
+Route::get('/articles/sql', 'ArticlesController@gettagsql');
 
-Route::get('/articles/create', 'ArticlesController@create');
-Route::get('/articles/{articles}', 'ArticlesController@results');
 
-Route::get('search', 'SearchController@index')->name('search');
-Route::get('autocomplete', 'SearchController@autocomplete')->name('autocomplete');
+
+
+Route::get('/articles/{articles}', 'ArticlesController@choose')->middleware('auth');
+Route::get('/articles/create', 'ArticlesController@create')->middleware('auth');
+//Route::get('/articles/{articles}', 'ArticlesController@show');
+
+
+/*Route::get('search', 'SearchController@index')->name('search');
+Route::get('autocomplete', 'SearchController@autocomplete')->name('autocomplete');*/
 
 
 

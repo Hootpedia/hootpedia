@@ -28,7 +28,7 @@ class RegisterController extends Controller
         try {
             $this->validate(request(), [
                 'username' => 'required',
-                'email' => 'required|email|max:255|unique:users|regex:/(.*)\.myemail\.edu$/i',
+                'email' => ['required','ends_with:fau.edu'/*'regex:/^[a-zA-Z0-9_.+-]+@(?:(?:[a-zA-Z0-9-]+\.)?[a-zA-Z]+\.)?(fau)\.edu$/'*/ ],
                 'password' => 'required'
             ]);
         } catch (ValidationException $e) {

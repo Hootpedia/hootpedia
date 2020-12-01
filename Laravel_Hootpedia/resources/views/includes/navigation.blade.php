@@ -1,3 +1,4 @@
+
 <nav class="navbar navbar-expand-md bg-light navbar-light sticky-top shadow-sm px-5">
     <a class="navbar-brand" href="{{url('/')}}">
         <div class="d-flex">
@@ -54,29 +55,48 @@
 
             @elseif(auth()->check())
                     <ul class="navbar-nav text-right">
-                  <li>
+                {{--  <li>
                       <form action="/search" method="GET" role="search">
                           @csrf
                           <div class="input-group">
                               <input type="text" class="form-control" name="q" placeholder="Search">
                               <span class="input-group-btn">
                                 <button type="submit" class="btn btn-default">
-{{--                                    <span class="glyphicon glyphicon-search"></span>--}}
+--}}{{--                                    <span class="glyphicon glyphicon-search"></span>--}}{{--
                                 </button>
                             </span>
                           </div>
                       </form>
-                  </li>
+                  </li>--}}
+                        <li class="nav-item {{--active--}}">
+                            <a class="nav-link" href="/articles/html">Html {{--<span class="sr-only">(current)</span>--}}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/articles/fundamentals">Fundamentals</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/articles/java">Java</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/articles/cplusplus">C++</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/articles/python">Python</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/articles/sql">SQL</a>
+                        </li>
 
                         <li class="nav-item">
-                            <a href="/newpost" class="mx-1 btn btn-outline-primary">
-                                {{--<span class="glyphicon glyphicon-circle-arrow-up"></span>--}} Post
+                            <a href="/articles/create" class="mx-1 btn btn-outline-primary">
+
+                                <span class="glyphicon glyphicon-circle-arrow-up"></span> Post
                             </a>
                         </li>
                         <li class="nav-item">
                             <button class="mx-1 btn btn-outline-primary">
-                                {{auth()->user()->name}}
                                 <img src="https://cdn.discordapp.com/attachments/754460456206336021/758102864009887814/unknown.png" width="25">
+                                <a href="/profile">{{auth()->user()->name}}</a>
                             </button>
                         </li>
                         <li class="nav-item">
