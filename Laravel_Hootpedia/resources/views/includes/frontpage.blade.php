@@ -17,7 +17,7 @@
 				<div class="col-9">
 					<h5 class="card-title">{{$article->title}}</h5>
 					<p class="small text-secondary">{{$article->content}}</p>
-					<button type="button" class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#exampleModalCenter">
+					<button type="button" id="{{$article->id}}" class="articlebutton btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#exampleModalCenter">
 					Read More
 					</button>
 				</div>

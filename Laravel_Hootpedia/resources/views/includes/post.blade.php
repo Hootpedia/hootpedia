@@ -10,26 +10,28 @@
 <body>
 	<div class="container">
 		<h1 class="pt-5" id="outputHeader">Article Header</h1>
-		<h2 class="small">By <span id="outputAuthor">Author</span> on <span id="outputDate">MM/DD/YYYY 12:00AM</span></h2>
+		<h2 class="small">Created In <span id="outputAuthor">Tag</span> on <span id="outputDate">MM/DD/YYYY 12:00AM</span></h2>
 		<div id="outputContent" class="py-3"><p>Content goes here</p></div>
 	</div>
-	
-	<?php
-		if(isset($_POST["postHeader"])){$postHeader = $_POST["postHeader"];}
-		if(isset($_POST["postAuthor"])){$postAuthor = $_POST["postAuthor"];}
-		if(isset($_POST["postDate"])){$postDate = $_POST["postDate"];}
-		if(isset($_POST["postContent"])){$postContent = $_POST["postContent"];}
-	?>
-	
 	<script>
-		//var outputHeader = '<?php //echo $postHeader; ?>';
-		//var outputAuthor = '<?php //echo $postAuthor; ?>';
-		//var outputDate = '<?php //echo $postDate; ?>';
-		//var outputContent = '<?php //echo $postContent; ?>';
-		//$('#outputHeader').html(outputHeader);
-		//$('#outputAuthor').html(outputAuthor);
-		//$('#outputDate').html(outputDate);
-		//$('#outputContent').html(outputContent);
+			$( ".articlebutton" ).click(function() {
+				@foreach($articles ?? '' as $article)
+					if(this.id == "{{$article->id}}")
+					{
+						var outputHeader = "{{$article->title}}";
+						var outputAuthor = "{{$article->tag}}";
+						var outputDate = "{{$article->created_at}}";
+						var outputContent = "{{$article->content}}";
+						
+						
+						$('#outputHeader').html(outputHeader);
+						$('#outputAuthor').html(outputAuthor);
+						$('#outputDate').html(outputDate);
+						$('#outputContent').html(outputContent);
+					}
+				@endforeach
+			});
+		
 	</script>
 
 </body>
