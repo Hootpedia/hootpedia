@@ -73,7 +73,7 @@ class ArticlesController extends Controller
     }
     public function gettagfundamentals()
     {
-        $articles = Article::where('tag', 'Fundamemtals')
+        $articles = Article::where('tag', 'Fundamentals')
             ->orderBy('id', 'desc')
             ->get();
         //$article->orderBy('id', 'DESC')->paginate(10);
