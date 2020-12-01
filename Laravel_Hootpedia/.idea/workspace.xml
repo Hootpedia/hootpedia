@@ -3,15 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8aefaee7-c04b-4815-90fa-1d4b9909b3f5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ArticlesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ArticlesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/newpost.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/newpost.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/articles/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/articles/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/includes/frontpage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/frontpage.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/includes/navigation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/navigation.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/includes/post.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/post.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <list id="8fddb65c-9b81-426e-9628-34e91ad90ad7" name="Revert &quot;Front Page + Modal Update&quot;" comment="Revert &quot;Front Page + Modal Update&quot;&#10;&#10;This reverts commit 00dfdae2" />
     <option name="SHOW_DIALOG" value="false" />
@@ -279,7 +271,7 @@
       <workItem from="1605539684651" duration="12589000" />
       <workItem from="1605896988920" duration="30888000" />
       <workItem from="1606698756734" duration="21296000" />
-      <workItem from="1606783906912" duration="6222000" />
+      <workItem from="1606783906912" duration="6444000" />
     </task>
     <task id="LOCAL-00001" summary="env">
       <created>1602628489178</created>
@@ -337,7 +329,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606703816520</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="edits">
+      <created>1606790307096</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1606790307096</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -361,11 +360,11 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="883" y="175" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.834@0.0.1536.834" timestamp="1606669547390" />
-    <state x="284" y="0" key="CommitChangelistDialog2" timestamp="1606703814764">
+    <state x="284" y="0" key="CommitChangelistDialog2" timestamp="1606790306012">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="266" y="25" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1602628488902" />
-    <state x="284" y="0" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1606703814764" />
+    <state x="284" y="0" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1606790306012" />
     <state width="254" height="195" key="DatabaseViewActions_Filter" timestamp="1605465309266">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -407,23 +406,23 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="211" height="499" key="HiddenNamespacesPopup/0.0.1536.834@0.0.1536.834" timestamp="1606615343093" />
-    <state x="294" y="69" key="MergeDialog" timestamp="1606784852922">
+    <state x="294" y="69" key="MergeDialog" timestamp="1606790370202">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="294" y="69" key="MergeDialog/0.0.1536.834@0.0.1536.834" timestamp="1606784852922" />
-    <state x="864" y="135" key="MultipleFileMergeDialog" timestamp="1606785248930">
+    <state x="294" y="69" key="MergeDialog/0.0.1536.834@0.0.1536.834" timestamp="1606790370202" />
+    <state x="864" y="135" key="MultipleFileMergeDialog" timestamp="1606790373778">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="864" y="135" key="MultipleFileMergeDialog/0.0.1536.834@0.0.1536.834" timestamp="1606785248930" />
+    <state x="864" y="135" key="MultipleFileMergeDialog/0.0.1536.834@0.0.1536.834" timestamp="1606790373778" />
     <state x="270" y="59" key="SettingsEditor" timestamp="1605465493153">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="270" y="59" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1605465493153" />
-    <state x="207" y="176" key="Vcs.Push.Dialog.v2" timestamp="1606703824587">
+    <state x="207" y="176" key="Vcs.Push.Dialog.v2" timestamp="1606790319115">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1602630044589" />
-    <state x="207" y="176" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1606703824587" />
+    <state x="207" y="176" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1606790319115" />
     <state x="660" y="306" width="332" height="237" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1605465458254">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -440,11 +439,11 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="457" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1606784254068" />
-    <state x="569" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606785233257">
+    <state x="569" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606790340939">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="533" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1602630949722" />
-    <state x="569" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1606785233257" />
+    <state x="569" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1606790340939" />
     <state x="378" y="128" key="git4idea.branch.GitSmartOperationDialog" timestamp="1605894695089">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
