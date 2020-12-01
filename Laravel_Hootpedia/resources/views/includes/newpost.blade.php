@@ -29,7 +29,7 @@
               <label class="form-check-label" for="title">Tag: </label>
               <!--<input  class="form-control" type="text" name="tag" id="tag" required>-->
 			  <select class="form-control" name="tag" id="tag">
-				<option>Fundamemtals</option>
+				<option>Fundamentals</option>
 				<option>C/C++</option>
 				<option>Java</option>
 				<option>HTML/CSS</option>
