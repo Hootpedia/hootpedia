@@ -18,7 +18,7 @@
 	<h1 class="pt-5">New Post</h1>
 
 	  <!--Use This form to submit summernote to php-->
-	  <form {{--id="sampleForm" name="sampleForm"--}} method="POST" action="/save">
+	  <form id="sampleForm" name="sampleForm" method="POST" action="/save">
           @csrf
 
 			<div class="py-2 form-group">
@@ -27,7 +27,7 @@
 			</div>
           <div class="py-2 form-group">
               <label class="form-check-label" for="title">Tag: </label>
-              <!--<input  class="form-control" type="text" name="tag" id="tag" required>-->
+{{--              <input  class="form-control" type="text" name="tag" id="tag" required>--}}
 			  <select class="form-control" name="tag" id="tag">
 				<option>Fundamentals</option>
 				<option>C/C++</option>
@@ -40,9 +40,8 @@
           </div>
 			<div class="py-2 form-group">
 				<label class="form-check-label" for="content">Content: </label>
-                {{--
-				<div class="form-control" type="hidden" name="content"id="summernote"></div>
-				--}}
+
+{{--				<div class="form-control" type="hidden" name="content"id="summernote"></div>--}}
                 <textarea class="form-control" rows="5" name="content" id="summernote" required></textarea>
 			</div>
 			<div class="py-2 form-group">

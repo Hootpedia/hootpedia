@@ -86,6 +86,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="/articles/sql">SQL</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/articles/javascript">Javascript</a>
+                        </li>
 
                         <li class="nav-item">
                             <a href="/articles/create" class="mx-1 btn btn-outline-primary">
