@@ -78,6 +78,9 @@
                             <a class="nav-link" href="/articles/java">Java</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="/articles/javascript">Javascript</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="/articles/cplusplus">C++</a>
                         </li>
                         <li class="nav-item">

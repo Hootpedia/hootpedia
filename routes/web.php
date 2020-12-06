@@ -67,6 +67,7 @@ Route::post('/save', 'ArticlesController@store');
 Route::get('/articles', 'ArticlesController@index');
 Route::get('/articles/html', 'ArticlesController@gettaghtml');
 Route::get('/articles/java', 'ArticlesController@gettagjava');
+Route::get('/articles/javascript', 'ArticlesController@gettagjavascript');
 Route::get('/articles/python', 'ArticlesController@gettagpython');
 Route::get('/articles/cplusplus', 'ArticlesController@gettagcplusplus');
 Route::get('/articles/fundamentals', 'ArticlesController@gettagfundamentals');

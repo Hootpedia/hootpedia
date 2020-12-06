@@ -40,9 +40,9 @@
           </div>
 			<div class="py-2 form-group">
 				<label class="form-check-label" for="content">Content: </label>
-                {{--
+{{--
 				<div class="form-control" type="hidden" name="content"id="summernote"></div>
-				--}}
+--}}
                 <textarea class="form-control" rows="5" name="content" id="summernote" required></textarea>
 			</div>
 			<div class="py-2 form-group">
