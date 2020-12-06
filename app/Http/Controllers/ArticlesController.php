@@ -79,9 +79,9 @@ class ArticlesController extends Controller
         //$article->orderBy('id', 'DESC')->paginate(10);
         return view('home', ['articles'=>$articles]);
     }
-    public function gettagpython()
+    public function gettagjavascript()
     {
-        $articles = Article::where('tag', 'Python')
+        $articles = Article::where('tag', 'Javascript')
             ->orderBy('id', 'desc')
             ->get();
         //$article->orderBy('id', 'DESC')->paginate(10);
