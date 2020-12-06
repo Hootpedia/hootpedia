@@ -21,6 +21,7 @@
 						var outputHeader = "{{$article->title}}";
 						var outputAuthor = "{{$article->tag}}";
 						var outputDate = "{{$article->created_at}}";
+						
 						var outputContent = '{!! $article->content !!}';
 
 
