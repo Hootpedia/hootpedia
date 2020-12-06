@@ -74,9 +74,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="/articles/fundamentals">Fundamentals</a>
                         </li>
-                        <li class="nav-item">
+                        <!---<li class="nav-item">
                             <a class="nav-link" href="/articles/java">Java</a>
-                        </li>
+                        </li>-->
                         <li class="nav-item">
                             <a class="nav-link" href="/articles/javascript">Javascript</a>
                         </li>
