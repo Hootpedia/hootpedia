@@ -15,8 +15,8 @@
 	</div>
 	<script>
 			$( ".articlebutton" ).click(function() {
-				@foreach($articles ?? '' as $article)
-					if(this.id == "{{$article->id}}")
+				@foreach($articles ?? '' as $articles)
+					if(this.id == "{{$articles->id}}")
 					{
 						var outputHeader = "{{$article->title}}";
 						var outputAuthor = "{{$article->tag}}";

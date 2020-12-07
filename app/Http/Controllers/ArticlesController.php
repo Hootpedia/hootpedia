@@ -7,14 +7,14 @@ use App\Models\Article;
 
 class ArticlesController extends Controller
 {
-    public function index()
+   /* public function index()
     {
 
         $article =Article::latest()->get();
 
        return view('articles.results',['article'=>$article]);
     }
-
+*/
 
     public function show($id)
     {
