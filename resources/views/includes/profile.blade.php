@@ -13,7 +13,7 @@
 		<br>
 		<form>
 			<div class="form-group">
-				<label for="gender">Sex:<label><br>
+				<p>Sex:</p><br>
 				<input type="radio" id="gender" name="gender" value="male">
 				<label for="gender">Female</label><br>
 				<input type="radio" id="gender" name="gender" value="female">
