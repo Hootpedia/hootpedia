@@ -138,19 +138,19 @@
           </tr>
           <tr>
             <td class="first-col">I would like to build games and applications.</td>
-            <td><input type="radio" value="disagree3" name="front" /></td>
-            <td><input type="radio" value="agree3" name="front" /></td>
+            <td><input type="radio" value="disagree3" name="front1" /></td>
+            <td><input type="radio" value="agree3" name="front1" /></td>
           
           </tr>
           <tr>
             <td class="first-col">I am interested in the creation and studies of AI</td>
-            <td><input type="radio" value="disagree4" name="front" /></td>
-            <td><input type="radio" value="agree4" name="front" /></td>
+            <td><input type="radio" value="disagree4" name="front2" /></td>
+            <td><input type="radio" value="agree4" name="front2" /></td>
           </tr>￼
           <tr>
             <td class="first-col">I Am interested in data management, database design, and dig data </td>
-            <td><input type="radio" value="disagree5" name="front" /></td>
-            <td><input type="radio" value="agree5" name="front" /></td>
+            <td><input type="radio" value="disagree5" name="front3" /></td>
+            <td><input type="radio" value="agree5" name="front3" /></td>
            
           </tr>
          
