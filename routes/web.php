@@ -31,6 +31,10 @@ Route::get('/profile', function () {
     return view('profile');
 })->middleware('auth');
 
+Route::get('/questions',function(){
+    return view('questions');
+})->middleware('auth');
+
 Route::get('/post', function () {
     return view('post');
 });
