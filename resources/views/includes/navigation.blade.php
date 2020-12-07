@@ -102,7 +102,7 @@
                         <li class="nav-item">
 {{--                            <button class="mx-1 btn btn-outline-primary">--}}
 {{--                                <img src="https://cdn.discordapp.com/attachments/754460456206336021/758102864009887814/unknown.png" width="25">--}}
-                                <a href="/profile/{{ auth()->user->id }}" class="mx-1 btn btn-outline-primary">
+                                <a href="/user/{{ auth()->user()->id }}" class="mx-1 btn btn-outline-primary">
                                     <img src="https://cdn.discordapp.com/attachments/754460456206336021/758102864009887814/unknown.png" width="25">
                                     {{auth()->user()->name}}
                                 </a>

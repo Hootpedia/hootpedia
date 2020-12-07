@@ -60,7 +60,7 @@ Route::get('/post', function () {
 
 Route::get('/register','RegisterController@create');
 Route::post('/register','RegisterController@store');
-Route::get('/profile/{user}','RegisterController@edit');
+Route::get('/user/{user}','RegisterController@edit');
 
 Route::post('/login','SessionsController@store');
 Route::get('/logout','SessionsController@destroy');
