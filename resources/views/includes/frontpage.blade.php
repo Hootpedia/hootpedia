@@ -17,11 +17,11 @@
 				<div class="col-9">
 					<h3 class="card-title">{{$article->title}}</h3>
 					<p class="small text-secondary">{{$article->created_at}}</p>
-					{{--<button type="button" id="{{$article->id}}" class="articlebutton btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#exampleModalCenter">
+					<button type="button" id="{{$article->id}}" class="articlebutton btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#exampleModalCenter">
 					Read More
-					</button>--}}
+					</button>
 				</div>
-						<a href="/articles/{{ $article->id }}">Read More</a>
+{{--						<a href="/articles/{{ $article->id }}">Read More</a>--}}
 			</div>
 		</div>
             <br>
