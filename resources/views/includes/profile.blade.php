@@ -13,19 +13,23 @@
 		<br>
 		<form>
 			<div class="form-group">
-				<input type="radio" id="male" name="gender" value="male">
-				<label for="male">Female</label><br>
-				<input type="radio" id="female" name="gender" value="female">
-				<label for="female">Male</label><br><br>
-				<label for="fname">Age:</label><br>
-				<input class="form-control" type="text" id="fname" name="fname"><br><br>
+				<label for="gender">Sex:<label><br>
+				<input type="radio" id="gender" name="gender" value="male">
+				<label for="gender">Female</label><br>
+				<input type="radio" id="gender" name="gender" value="female">
+				<label for="gender">Male</label><br><br>
+			</div>
+			
+			<div class="form-group">	
+				<label for="age">Age:</label><br>
+				<input class="form-control" type="number" id="age" name="age"><br><br>
 				<label for="fname">School:</label><br>
-				<input class="form-control" type="text" id="fname" name="fname"><br>
+				<input class="form-control" type="text" id="school" name="school"><br>
 				<br><label for="fname">Bio:</label><br>
+				<textarea class="form-control" type="text" id="fname" name="fname"></textarea><br>
 			</div>
 
-			<input class="form-control" type="text" id="fname" name="fname"><br>
-			<br><input type="submit" value="Submit">
+			<br><input class="btn btn-primary" type="submit" value="Submit">
 			<br><br>
    </form>
  </div>
