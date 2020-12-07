@@ -108,7 +108,7 @@
                         <li class="nav-item">
                             <a href="/logout"class="mx-1 btn btn-outline-primary">
                                  Logout
-                            </>
+                            </a>
                         </li>
                     </ul>
             @endif
