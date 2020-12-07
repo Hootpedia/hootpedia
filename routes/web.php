@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Symfony\Component\Console\Input\Input;
 
 /*
 |--------------------------------------------------------------------------
