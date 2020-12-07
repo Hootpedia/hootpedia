@@ -15,12 +15,12 @@
 	</div>
 	<script>
 			$( ".articlebutton" ).click(function() {
-				@foreach($articles  as $article)
-					if(this.id == "{{$article->id}}")
+				@foreach($articles ?? '' as $article)
+					if(this.id == "{{$articles->id}}")
 					{
-						var outputHeader = "{{$article->title}}";
-						var outputAuthor = "{{$article->tag}}";
-						var outputDate = "{{$article->created_at}}";
+						var outputHeader = "{{$articles->title}}";
+						var outputAuthor = "{{$articles->tag}}";
+						var outputDate = "{{$articles->created_at}}";
 
 						var outputContent = '{!! $article->content !!}';
 
