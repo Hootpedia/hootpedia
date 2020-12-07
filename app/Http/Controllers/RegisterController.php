@@ -10,7 +10,7 @@ class RegisterController extends Controller
 {
     //simply redirects to register view (which is home because of our modals)
     public function create(){
-        redirect()->to('/questions');
+        return view('questions');
     }
 
     //makes new user from request, validates, saves user to the database, then automatically logs user in
