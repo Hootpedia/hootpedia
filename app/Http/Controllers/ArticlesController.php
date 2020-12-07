@@ -22,7 +22,7 @@ class ArticlesController extends Controller
     {
         //shows a single resource
         $article = Article::find($id);
-        return view('home', ['article'=>$article]);
+        return view('articles.show', ['article'=>$article]);
     }
 
     public function gettaghtml()
