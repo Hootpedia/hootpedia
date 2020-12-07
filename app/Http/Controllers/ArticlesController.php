@@ -26,7 +26,7 @@ class ArticlesController extends Controller
     public function gettaghtml()
     {
 
-        $articles = Article::where('tag', 'HTML/CSS ')
+        $articles = Article::where('tag', 'HTML/CSS')
             ->orderBy('id', 'desc')
             ->get();
         //$article->orderBy('id', 'DESC')->paginate(10);
