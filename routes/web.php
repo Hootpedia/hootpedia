@@ -18,9 +18,9 @@ use Illuminate\Support\Facades\Route;
 });*/
 
 Route::get('/', function () {
-    return view('home'/*,[
+    return view('home',[
         'articles'=> App\Models\Article::latest()->get()
-    ]*/);
+    ]);
 });
 
 /*Route::get('/newpost', function () {
