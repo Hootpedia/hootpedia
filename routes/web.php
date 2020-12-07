@@ -75,7 +75,7 @@ Route::get('/articles/sql', 'ArticlesController@gettagsql');
 
 
 
-Route::get('/articles/{articles}', 'ArticlesController@choose')->middleware('auth');
+Route::get('/articles/{articles}', 'ArticlesController@show')->middleware('auth');
 Route::get('/articles/create', 'ArticlesController@create')->middleware('auth');
 //Route::get('/articles/{articles}', 'ArticlesController@show');
 

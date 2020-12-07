@@ -31,7 +31,7 @@
 			  <select class="form-control" name="tag" id="tag">
 				<option>Fundamentals</option>
 				<option>C/C++</option>
-				<option>Java</option>
+{{--				<option>Java</option>--}}
 				<option>HTML/CSS</option>
 				<option>Javascript</option>
 				<option>Python</option>
