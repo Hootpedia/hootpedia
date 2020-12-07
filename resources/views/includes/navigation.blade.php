@@ -15,6 +15,9 @@
 
 
         <div class="collapse navbar-collapse flex-grow-0 ml-auto mr-1" id="collapsibleNavbar">
+            @if ($errors->has('email'))
+                <p class="help is-danger">{{$errors->first('email')}}</p>
+            @endif
             <ul class="navbar-nav text-right">
                 @if(!auth()->check())
 
