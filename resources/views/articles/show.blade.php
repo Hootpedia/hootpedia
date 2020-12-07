@@ -25,17 +25,17 @@
     <div class="row" style="height:100%;">
         <div class="col-md-9">
 
-                <div class="card mx-auto d-flex justify-content-center shadow" style="width: 60%; min-width:25rem;">
+                <div class="" style="width: 60%; min-width:25rem;">
                     <h2 class="border border-top-0 border-left-0 border-right-0 py-2">{{$article->tag}}</h2>
-                    <div class="card-body row text-left">
+                    <div class="body">
                         <div class="col-3 text-center p-1">
                             <img class="img-fluid border rounded-circle"
                                  src="https://cdn.discordapp.com/attachments/754460456206336021/758102864009887814/unknown.png"
                                  style="max-width:100px; height:auto;">
                         </div>
                         <div class="col-9">
-                            <h5 class="card-title">{{$article->title}}</h5>
-                            <p class="small text-secondary">{{$article->content}}</p>
+                            <h5 class="title">{{$article->title}}</h5>
+                            <p class="content">{{$article->content}}</p>
                         </div>
                     </div>
                 </div>
