@@ -7,16 +7,16 @@ use App\Models\Article;
 
 class ArticlesController extends Controller
 {
-   /* public function index()
+    public function index()
     {
         //renders a list
         $article=Article::latest()->get();
         //$article=Article::query()->where('title', 'Like', '%' . request('term') . '%');
 
        //$article->orderBy('id', 'DESC')->paginate(10);
-       //return view('articles.results',['article'=>$article]);
+       return view('articles.results',['article'=>$article]);
     }
-*/
+
 
     public function show($id)
     {
