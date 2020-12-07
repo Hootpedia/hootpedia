@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
     return view('welcome');
 });*/
 
-Route::get('http://18.235.249.2/', function () {
+Route::get('/', function () {
     return view('home',[
         'articles'=> App\Models\Article::latest()->get()
     ]);
