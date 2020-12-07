@@ -10,11 +10,11 @@ class ArticlesController extends Controller
     public function index()
     {
         //renders a list
-        $article=Article::latest()->get();
+        $articles=Article::latest()->get();
         //$article=Article::query()->where('title', 'Like', '%' . request('term') . '%');
 
        //$article->orderBy('id', 'DESC')->paginate(10);
-       return view('home',['article'=>$article]);
+       return view('home',['article'=>$articles]);
     }
 
 
