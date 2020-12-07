@@ -15,7 +15,7 @@
 	</div>
 	<script>
 			$( ".articlebutton" ).click(function() {
-				@foreach($articles ?? '' as $article)
+				@foreach($articles as $article)
 					if(this.id == "{{$article->id}}")
 					{
 						var outputHeader = "{{$article->title}}";
