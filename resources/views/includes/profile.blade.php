@@ -2,7 +2,6 @@
 	<form action="#" method="PUT">
 	@csrf
 		<br>
-		<p>Profile picture Preview</p>
 {{--		<input type="image" src="https://cdn.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png" alt="Submit" style="float:inherit" width="250" height="250">--}}
 		<img src="https://cdn.discordapp.com/attachments/754460456206336021/758102864009887814/unknown.png" style="float:inherit" width="250" height="250">
 

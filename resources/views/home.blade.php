@@ -67,7 +67,7 @@
 </div>
 
 <!-- Footer -->
-{{--@include('includes.footer')--}}
+@include('includes.footer')
 
 </body>
 
