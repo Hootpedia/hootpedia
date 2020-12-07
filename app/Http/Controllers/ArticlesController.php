@@ -7,7 +7,7 @@ use App\Models\Article;
 
 class ArticlesController extends Controller
 {
-    public function index()
+ /*   public function index()
     {
         //renders a list
         $articles=Article::latest()->get();
@@ -15,7 +15,7 @@ class ArticlesController extends Controller
 
        //$article->orderBy('id', 'DESC')->paginate(10);
        return view('home',['article'=>$articles]);
-    }
+    }*/
 
 
     public function show($id)
