@@ -13,9 +13,9 @@
 		<br>
 		<form>
 			<div class="form-group">
-				<input class="form-control" type="radio" id="male" name="gender" value="male">
+				<input type="radio" id="male" name="gender" value="male">
 				<label for="male">Female</label><br>
-				<input class="form-control" type="radio" id="female" name="gender" value="female">
+				<input type="radio" id="female" name="gender" value="female">
 				<label for="female">Male</label><br><br>
 				<label for="fname">Age:</label><br>
 				<input class="form-control" type="text" id="fname" name="fname"><br><br>
