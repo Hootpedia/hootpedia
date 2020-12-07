@@ -57,7 +57,7 @@ class RegisterController extends Controller
     }
 
     public function update($id){
-        $user = new User();
+        $user = User::find($id);
         $user->name = request('username');
         $user->password = request('password');
         $user->email = request('email');
