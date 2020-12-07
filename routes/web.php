@@ -27,8 +27,12 @@ Route::get('/', function () {
     return view('newpost');
 })->middleware('auth');*/
 
-Route::get('/profile', function () {
-    return view('profile');
+//Route::get('/profile', function () {
+//    return view('profile');
+//})->middleware('auth');
+
+Route::get('/questions',function(){
+    return view('questions');
 })->middleware('auth');
 
 Route::get('/post', function () {
@@ -56,6 +60,7 @@ Route::get('/post', function () {
 
 Route::get('/register','RegisterController@create');
 Route::post('/register','RegisterController@store');
+Route::get('/profile','RegisterController@edit');
 
 Route::post('/login','SessionsController@store');
 Route::get('/logout','SessionsController@destroy');

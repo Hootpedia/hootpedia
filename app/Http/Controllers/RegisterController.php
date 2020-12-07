@@ -17,35 +17,56 @@ class RegisterController extends Controller
     public function store()
     {
 
-        $validator=Validator::make(request()->all(), [
-            'username' => 'required',
-            'email' => ['required','ends_with:fau.edu'/*'regex:/^[a-zA-Z0-9_.+-]+@(?:(?:[a-zA-Z0-9-]+\.)?[a-zA-Z]+\.)?(fau)\.edu$/'*/ ],
-            'password' => 'required'
-        ]);
-        if ($validator->fails()) {
-            return redirect('/')
-                ->withErrors($validator)
-                ->withInput();
-        }
+
 
         $user = new User();
         $user->name = request('username');
         $user->password = request('password');
         $user->email = request('email');
-        $rules = [
+      /*  $rules = [
             'email' => 'required|ends_with:fau.edu',
         ];
         $messages=[
             'required'=>'The email field is required'
+        ];*/
+        $rules = [
+            'email' => 'required|ends_with:fau.edu',
         ];
 
+        try {
+            $this->validate(request(), [
+                'username' => 'required',
+                'email' => ['required','allowed_domain','email'/*'regex:/^[a-zA-Z0-9_.+-]+@(?:(?:[a-zA-Z0-9-]+\.)?[a-zA-Z]+\.)?(fau)\.edu$/'*/ ],
+                'password' => 'required'
+            ]);
+        } catch (ValidationException $e) {
+        }
 
         $user->save();
         //auth()->login($user);
 
         Auth::login($user,true);
-        return redirect('/');
+        return redirect('/questions');
     }
 
 
+    public function edit($id){
+        $user=User::find($id);
+
+        return view('profile', compact('user'));
+    }
+
+    public function update($id){
+        $user = User::find($id);
+        $user->name = request('username');
+        $user->password = request('password');
+        $user->email = request('email');
+      /*  if($user->email=="durewill@gmail.com"){
+           // $user->type=1;
+        }elseif ($user->type!=1){
+            $user->type=1;
+        }*/
+
+        $user->save();
+    }
 }
