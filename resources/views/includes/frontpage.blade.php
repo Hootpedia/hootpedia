@@ -19,8 +19,8 @@
 					<p class="small text-secondary">{{$article->created_at}}</p>
 					{{--<button type="button" id="{{$article->id}}" class="articlebutton btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#exampleModalCenter">
 					Read More
-					</button>
-				</div>--}}
+					</button>--}}
+				</div>
 					<button type="button" id="{{$article->id}}" href="/articles/{{$article->id}}">
 						Read More
 					</button>
