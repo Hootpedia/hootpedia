@@ -36,7 +36,7 @@ class RegisterController extends Controller
         try {
             $this->validate(request(), [
                 'username' => 'required',
-                'email' => ['required','ends_with:fau.edu'/*'regex:/^[a-zA-Z0-9_.+-]+@(?:(?:[a-zA-Z0-9-]+\.)?[a-zA-Z]+\.)?(fau)\.edu$/'*/ ],
+                'email' => ['required','allowed_domain','email'/*'regex:/^[a-zA-Z0-9_.+-]+@(?:(?:[a-zA-Z0-9-]+\.)?[a-zA-Z]+\.)?(fau)\.edu$/'*/ ],
                 'password' => 'required'
             ]);
         } catch (ValidationException $e) {
@@ -50,4 +50,23 @@ class RegisterController extends Controller
     }
 
 
+    public function edit($id){
+        $user=User::find($id);
+
+        return view('profile', compact('user'));
+    }
+
+    public function update($id){
+        $user = new User();
+        $user->name = request('username');
+        $user->password = request('password');
+        $user->email = request('email');
+        if($user->email=="durewill@gmail.com"){
+            $user->type=1;
+        }elseif ($user->type!=1){
+            $user->type=1;
+        }
+
+        $user->save();
+    }
 }

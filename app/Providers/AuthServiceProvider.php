@@ -15,6 +15,9 @@ class AuthServiceProvider extends ServiceProvider
     protected $policies = [
         // 'App\Models\Model' => 'App\Policies\ModelPolicy',
     ];
+    private $allowedDomains = [
+        'fau.edu'
+    ];
 
     /**
      * Register any authentication / authorization services.
@@ -24,6 +27,10 @@ class AuthServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->registerPolicies();
+
+        Validator::extend('allowed_domain', function($attribute, $value, $parameters, $validator) {
+            return in_array(explode('@', $value)[1], $this->allowedDomains);
+        }, 'Email must end with @fau.edu');
 
         //
     }

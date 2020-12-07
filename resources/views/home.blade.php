@@ -20,7 +20,7 @@
 @include('includes.navigation')
 @if (count($errors) > 0)
     <div class="alert alert-danger text-left">
-        <strong>Whoops!</strong> There were problems with input:
+        <strong>Whoops!</strong>
         <br><br>
         <ul>
             @foreach ($errors->all() as $error)
