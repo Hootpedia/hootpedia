@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Symfony\Component\Console\Input\Input;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,7 +18,7 @@ use Symfony\Component\Console\Input\Input;
 });*/
 
 Route::get('/', function () {
-    return view('home',[
+    return view('includes.frontpage',[
         'articles'=> App\Models\Article::latest()->get()
     ]);
 });
