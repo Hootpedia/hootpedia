@@ -97,15 +97,18 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <button class="mx-1 btn btn-outline-primary">
-                                <img src="https://cdn.discordapp.com/attachments/754460456206336021/758102864009887814/unknown.png" width="25">
-                                <a href="/profile">{{auth()->user()->name}}</a>
-                            </button>
+{{--                            <button class="mx-1 btn btn-outline-primary">--}}
+{{--                                <img src="https://cdn.discordapp.com/attachments/754460456206336021/758102864009887814/unknown.png" width="25">--}}
+                                <a href="/profile" class="mx-1 btn btn-outline-primary">
+                                    <img src="https://cdn.discordapp.com/attachments/754460456206336021/758102864009887814/unknown.png" width="25">
+                                    {{auth()->user()->name}}
+                                </a>
+{{--                            </button>--}}
                         </li>
                         <li class="nav-item">
-                            <button class="mx-1 btn btn-outline-primary">
-                                <a href="/logout" >Logout</a>
-                            </button>
+                            <a href="/logout"class="mx-1 btn btn-outline-primary">
+                                 Logout
+                            </>
                         </li>
                     </ul>
             @endif
