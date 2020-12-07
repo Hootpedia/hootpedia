@@ -21,9 +21,7 @@
 					Read More
 					</button>--}}
 				</div>
-					<button type="button" id="{{$article->id}}">
-						<a href="/articles/{{ $article->id }}"></a>
-					</button>
+						<a href="/articles/{{ $article->id }}">Read More</a>
 			</div>
 		</div>
             <br>
