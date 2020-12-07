@@ -4,7 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 use Illuminate\Support\Facades\Gate;
-use Illuminate\Validation\Validator;
+use Illuminate\Support\Facades\Validator;
 
 class AuthServiceProvider extends ServiceProvider
 {
