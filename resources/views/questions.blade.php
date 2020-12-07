@@ -156,8 +156,8 @@
          
              <tr>
             <td class="first-col">I am interested in developing powerful software and OS</td>
-            <td><input type="radio" value="disagree6" name="front" /></td>
-            <td><input type="radio" value="agree6" name="front" /></td>
+            <td><input type="radio" value="disagree6" name="front4" /></td>
+            <td><input type="radio" value="agree6" name="front4" /></td>
            
           </tr>
           
