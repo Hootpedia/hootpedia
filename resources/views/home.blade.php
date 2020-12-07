@@ -18,6 +18,17 @@
 <body>
 <!-- Navigation-->
 @include('includes.navigation')
+@if (count($errors) > 0)
+    <div class="alert alert-danger text-left">
+        <strong>Whoops!</strong> There were problems with input:
+        <br><br>
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
 <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
 
 

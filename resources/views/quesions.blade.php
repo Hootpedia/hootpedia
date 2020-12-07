@@ -164,7 +164,7 @@
          
         </table>
         <div class="btn-block">
-          <button type="submit" href="/">Send Feedback</button>
+          <button type="submit">Send Feedback</button>
         </div>
       </form>
     </div>
