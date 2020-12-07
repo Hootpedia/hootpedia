@@ -14,7 +14,7 @@ class ArticlesController extends Controller
         //$article=Article::query()->where('title', 'Like', '%' . request('term') . '%');
 
        //$article->orderBy('id', 'DESC')->paginate(10);
-       return view('articles.results',['article'=>$article]);
+       return view('home',['article'=>$article]);
     }
 
 
