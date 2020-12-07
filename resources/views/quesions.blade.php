@@ -126,38 +126,38 @@
           </tr>
           <tr>
             <td class="first-col">I am interested in learning the basics and fundamentals of programming languages.</td>
-            <td><input type="radio" value="disagree" name="front" /></td>
-            <td><input type="radio" value="disagree" name="front" /></td>
+            <td><input type="radio" value="disagree1" name="front" /></td>
+            <td><input type="radio" value="agree1" name="front" /></td>
            
           </tr>
           <tr>
             <td class="first-col">I would like to build functional and nice looking websites.</td>
-            <td><input type="radio" value="none" name="name" /></td>
-            <td><input type="radio" value="none" name="name" /></td>
+            <td><input type="radio" value="disagree2" name="name" /></td>
+            <td><input type="radio" value="agree2" name="name" /></td>
            
           </tr>
           <tr>
             <td class="first-col">I would like to build games and applications.</td>
-            <td><input type="radio" value="disagree" name="front" /></td>
-            <td><input type="radio" value="disagree" name="front" /></td>
+            <td><input type="radio" value="disagree3" name="front" /></td>
+            <td><input type="radio" value="agree3" name="front" /></td>
           
           </tr>
           <tr>
             <td class="first-col">I am interested in the creation and studies of AI</td>
-            <td><input type="radio" value="disagree" name="front" /></td>
-            <td><input type="radio" value="disagree" name="front" /></td>
+            <td><input type="radio" value="disagree4" name="front" /></td>
+            <td><input type="radio" value="agree4" name="front" /></td>
           </tr>￼
           <tr>
             <td class="first-col">I Am interested in data management, database design, and dig data </td>
-            <td><input type="radio" value="disagree" name="front" /></td>
-            <td><input type="radio" value="disagree" name="front" /></td>
+            <td><input type="radio" value="disagree5" name="front" /></td>
+            <td><input type="radio" value="agree5" name="front" /></td>
            
           </tr>
          
              <tr>
             <td class="first-col">I am interested in developing powerful software and OS</td>
-            <td><input type="radio" value="disagree" name="front" /></td>
-            <td><input type="radio" value="disagree" name="front" /></td>
+            <td><input type="radio" value="disagree6" name="front" /></td>
+            <td><input type="radio" value="agree6" name="front" /></td>
            
           </tr>
           
