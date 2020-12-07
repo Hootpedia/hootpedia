@@ -16,7 +16,7 @@ class AuthServiceProvider extends ServiceProvider
         // 'App\Models\Model' => 'App\Policies\ModelPolicy',
     ];
     private $allowedDomains = [
-        'fau.edu'
+        '@fau.edu'
     ];
 
     /**

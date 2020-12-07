@@ -1,4 +1,6 @@
 <div class="container">
+	<h1 class="header">Edit Profile</h1>
+	<br>
 	<form action="#" method="PUT">
 	@csrf
 		<br>
