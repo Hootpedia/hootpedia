@@ -20,7 +20,7 @@ use Symfony\Component\Console\Input\Input;
 
 Route::get('/', function () {
     return view('home',[
-        'articles'=> App\Models\Article::latest()->get()
+        'article'=> App\Models\Article::latest()->get()
     ]);
 });
 
