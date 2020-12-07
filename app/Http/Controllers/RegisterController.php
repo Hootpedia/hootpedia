@@ -17,6 +17,17 @@ class RegisterController extends Controller
     public function store()
     {
 
+        $validator=Validator::make(request()->all(), [
+            'username' => 'required',
+            'email' => ['required','ends_with:fau.edu'/*'regex:/^[a-zA-Z0-9_.+-]+@(?:(?:[a-zA-Z0-9-]+\.)?[a-zA-Z]+\.)?(fau)\.edu$/'*/ ],
+            'password' => 'required'
+        ]);
+        if ($validator->fails()) {
+            return redirect('/')
+                ->withErrors($validator)
+                ->withInput();
+        }
+
         $user = new User();
         $user->name = request('username');
         $user->password = request('password');
@@ -24,15 +35,10 @@ class RegisterController extends Controller
         $rules = [
             'email' => 'required|ends_with:fau.edu',
         ];
+        $messages=[
+            'required'=>'The email field is required'
+        ];
 
-        try {
-            $this->validate(request(), [
-                'username' => 'required',
-                'email' => ['required','ends_with:fau.edu'/*'regex:/^[a-zA-Z0-9_.+-]+@(?:(?:[a-zA-Z0-9-]+\.)?[a-zA-Z]+\.)?(fau)\.edu$/'*/ ],
-                'password' => 'required'
-            ]);
-        } catch (ValidationException $e) {
-        }
 
         $user->save();
         //auth()->login($user);
