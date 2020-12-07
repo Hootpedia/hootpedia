@@ -46,11 +46,11 @@
                     @endif
 				</div>
 
-				<div class="form-group">
+				<!--<div class="form-group">
 					<label class="form-check-label">
 					<input class="form-check-input" type="checkbox" checked="checked" name="remember"> Remember me
 					</label>
-				</div>
+				</div> -->
 
 			</div>
 

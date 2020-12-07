@@ -27,7 +27,7 @@
                     @endif
 				</div>
 
-				<div class="form-group">
+				<!--<div class="form-group">
 					<label class="form-check-label">
 					<input class="form-check-input" type="checkbox" checked="checked" name="remember"> Remember me
 					</label>
@@ -35,7 +35,7 @@
 
 				<div class="py-2">
 					<span>Forgot <a href="#">password?</a></span>
-				</div>
+				</div> -->
 
 				<div class="container">
 					<button class="btn btn-primary" type="submit">Login</button>
