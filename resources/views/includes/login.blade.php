@@ -12,7 +12,7 @@
 				<div class="form-group">
 					<label for="email"><b>Email</b></label>
 					<input class="form-control" type="text"
-                           placeholder="Enter Username" name="email" required>
+                           placeholder="Enter Email" name="email" required>
                     @if ($errors->has('email'))
                         <p class="help is-danger">{{$errors->first('email')}}</p>
                     @endif
