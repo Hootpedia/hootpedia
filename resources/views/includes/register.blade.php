@@ -20,11 +20,13 @@
 
 				<div class="form-group">
 					<label for="email"><b>E-mail</b></label>
-					<input class="form-control" type="text"
+					{{--<input class="form-control" type="text"
                            placeholder="E-mail" name="email" required>
                     @if ($errors->has('email'))
                         <p class="help is-danger">{{$errors->first('email')}}</p>
-                    @endif
+                    @endif--}}
+					<input class="form-control"id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+
 				</div>
 
 				<div class="form-group">

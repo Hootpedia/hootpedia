@@ -39,6 +39,11 @@ class RegisterController extends Controller
                 'email' => ['required','allowed_domain','email'/*'regex:/^[a-zA-Z0-9_.+-]+@(?:(?:[a-zA-Z0-9-]+\.)?[a-zA-Z]+\.)?(fau)\.edu$/'*/ ],
                 'password' => 'required'
             ]);
+            if (auth()->attempt(request(['username','email', 'password'])) == false) {
+                return back()->withErrors([
+                    'message' => 'The email or password is incorrect, please try again'
+                ]);
+            }
         } catch (ValidationException $e) {
         }
 
