@@ -61,11 +61,11 @@ class RegisterController extends Controller
         $user->name = request('username');
         $user->password = request('password');
         $user->email = request('email');
-        if($user->email=="durewill@gmail.com"){
-            $user->type=1;
+      /*  if($user->email=="durewill@gmail.com"){
+           // $user->type=1;
         }elseif ($user->type!=1){
             $user->type=1;
-        }
+        }*/
 
         $user->save();
     }

@@ -10,14 +10,14 @@
 		<div class="form-group">
 			<label for="fname">First name:</label><br>
 {{--			<input class="form-control" type="text" id="fname" name="fname"><br>--}}
-			<textarea class="form-control" type="text" id="fname" name="fname">{{ $user->firstName }}</textarea><br>
+			<textarea class="form-control" type="text" id="fname" name="fname">{{--{{ $user->firstName }}--}}</textarea><br>
 
 			<label for="lname">Last name:</label><br>
 {{--			<input class="form-control" type="text" id="lname" name="lname">--}}
-			<textarea class="form-control" type="text" id="lname" name="lname">{{ $user->lastName }}</textarea><br>
+			<textarea class="form-control" type="text" id="lname" name="lname">{{--{{ $user->lastName }}--}}</textarea><br>
 
 			<br><label for="email">Email</label><br>
-			<textarea class="form-control" type="text" id="email" name="email">{{ $user->email }}</textarea><br>
+			<textarea class="form-control" type="text" id="email" name="email">{{--{{ $user->email }}--}}</textarea><br>
 
 		</div>
 		<br>
@@ -32,11 +32,11 @@
 			<div class="form-group">	
 				<label for="age">Age:</label><br>
 {{--				<input class="form-control" type="number" id="age" name="age"><br><br>--}}
-				<textarea name="age" id="age" type="number" class="form-control">{{ $user->age }}</textarea><br><br>
+				<textarea name="age" id="age" type="number" class="form-control">{{--{{ $user->age }}--}}</textarea><br><br>
 				{{--<label for="fname">School:</label><br>
 				<input class="form-control" type="text" id="school" name="school"><br>--}}
 				<br><label for="fname">Bio:</label><br>
-				<textarea class="form-control" type="text" id="bio" name="bio">{{ $user->bio }}</textarea><br>
+				<textarea class="form-control" type="text" id="bio" name="bio">{{--{{ $user->bio }}--}}</textarea><br>
 
 			</div>
 
